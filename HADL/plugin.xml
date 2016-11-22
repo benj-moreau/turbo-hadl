@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated hADL -->
+      <package
+            uri="http://www.example.org/hADL"
+            class="hADL.HADLPackage"
+            genModel="model/hADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated hADL -->
+      <package
+            uri="Connecteurs"
+            class="hADL.Connecteurs.ConnecteursPackage"
+            genModel="model/hADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated hADL -->
+      <package
+            uri="Composant"
+            class="hADL.Composant.ComposantPackage"
+            genModel="model/hADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated hADL -->
+      <package
+            uri="Liens"
+            class="hADL.Liens.LiensPackage"
+            genModel="model/hADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated hADL -->
+      <package
+            uri="Interfaces"
+            class="hADL.Interfaces.InterfacesPackage"
+            genModel="model/hADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated hADL -->
+      <package
+            uri="Roles"
+            class="hADL.Roles.RolesPackage"
+            genModel="model/hADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated hADL -->
+      <package
+            uri="Configuration"
+            class="hADL.Configuration.ConfigurationPackage"
+            genModel="model/hADL.genmodel"/>
+   </extension>
+
+</plugin>

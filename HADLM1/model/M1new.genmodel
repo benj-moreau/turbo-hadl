@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/HADLM1/src" modelPluginID="HADLM1" templateDirectory=""
+    modelName="M1new" modelPluginClass="" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    suppressEMFTypes="true" suppressEMFMetaData="true" suppressEMFModelTags="true"
+    suppressInterfaces="true" commentFormatting="true" importerID="org.eclipse.emf.importer.ecore"
+    suppressContainment="true" suppressNotification="true" arrayAccessors="true" complianceLevel="8.0"
+    copyrightFields="false" classNamePattern="" operationReflection="true" importOrganizing="true">
+  <foreignModel>hADLM1.ecore</foreignModel>
+  <genPackages prefix="HADLM1" resource="XML" disposableProviderFactory="true" ecorePackage="hADLM1.ecore#/">
+    <genClasses ecoreClass="hADLM1.ecore#//SecurityCheck_PortFourni"/>
+    <genClasses ecoreClass="hADLM1.ecore#//ExternalSocket_PortFourni"/>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementY6">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY6/dbquery_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY6/sqlrequest_roleto"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//Serveur_Composant">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Serveur_Composant/receive_request_port"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Serveur_Composant/serveurdetails_configuration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Serveur_Composant/answerrequest_portfournicompo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Serveur_Composant/bindingrequisserveurconfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Serveur_Composant/bindingserveurfournicompo"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//QueryInt_PortRequis"/>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementY4">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY4/securitycheck_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY4/clearencerequest_roleto"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementX6">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX6/securitycheck_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX6/clearencerequest_rolefrom"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//ExternalBindingSendRequest">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ExternalBindingSendRequest/sendrequest_portrequisconfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ExternalBindingSendRequest/externalportrequisclientsendrequest"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//Client_Composant">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Client_Composant/send_request_port"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Client_Composant/answerrequest_portrequiscompo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Client_Composant/externalportfourniclientanswerrequest"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Client_Composant/externalportrequisclientsendrequest"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//Receive_request_PortRequisCompo"/>
+    <genClasses ecoreClass="hADLM1.ecore#//SendRequest_PortRequisConfig"/>
+    <genClasses ecoreClass="hADLM1.ecore#//ClearenceRequest_RoleTo"/>
+    <genClasses ecoreClass="hADLM1.ecore#//SQLRequest_Connector">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//SQLRequest_Connector/sqlrequest_roleto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//SQLRequest_Connector/sqlrequest_rolefrom"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//Send_request_PortFourniCompo"/>
+    <genClasses ecoreClass="hADLM1.ecore#//SecurityManagement_PortFourni"/>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementY2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY2/queryint_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY2/sqlrequest_roleto"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//callerAnswer_RoleFrom"/>
+    <genClasses ecoreClass="hADLM1.ecore#//ServeurDetails_Configuration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/connectionmanager_composant"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/securitymanager_composant"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/database_composant"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/clearencerequest_connector"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/sqlrequest_connector"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/securityquery_connector"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementx1"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementx2"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementx3"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementx4"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementx5"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementx6"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementy1"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementy2"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementy3"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementy6"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementy4"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/lienattachementy5"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/receiverequestrequisconfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/answerrequest_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/bindingserveurfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ServeurDetails_Configuration/bindingrequisserveurdetails"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//SecurityAuth_PortRequis"/>
+    <genClasses ecoreClass="hADLM1.ecore#//AnswerRequest_PortRequisCompo"/>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementY1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY1/securitymanagement_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY1/securityquery_roleto"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//RPC_ConnectorExplicite">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//RPC_ConnectorExplicite/caller_role"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//RPC_ConnectorExplicite/called_roleto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//RPC_ConnectorExplicite/calledanswer_roleto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//RPC_ConnectorExplicite/calleranswer_rolefrom"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementY3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY3/securityauth_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY3/clearencerequest_roleto"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//BindingServeurFourniCompo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//BindingServeurFourniCompo/answerrequest_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//BindingServeurFourniCompo/answerrequest_portfournicompo"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//QueryInt_PortFourni"/>
+    <genClasses ecoreClass="hADLM1.ecore#//called_RoleTo"/>
+    <genClasses ecoreClass="hADLM1.ecore#//ClearenceRequest_Connector">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ClearenceRequest_Connector/clearencerequest_roleto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ClearenceRequest_Connector/clearencerequest_rolefrom"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementXRequest">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementXRequest/caller_rolefrom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementXRequest/w"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//SecurityAuth_PortFourni"/>
+    <genClasses ecoreClass="hADLM1.ecore#//AnswerRequest_PortFourni"/>
+    <genClasses ecoreClass="hADLM1.ecore#//SecurityQuery_Connector">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//SecurityQuery_Connector/securityquery_roleto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//SecurityQuery_Connector/securityquery_rolefrom"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//ExternalSocket_PortRequis"/>
+    <genClasses ecoreClass="hADLM1.ecore#//ClearenceRequest_RoleFrom"/>
+    <genClasses ecoreClass="hADLM1.ecore#//DBQuery_PortFourni"/>
+    <genClasses ecoreClass="hADLM1.ecore#//DBQuery_PortRequis"/>
+    <genClasses ecoreClass="hADLM1.ecore#//BindingServeurFOurni">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//BindingServeurFOurni/externalsocket_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//BindingServeurFOurni/answerrequest_portfourni"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementYAnswer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementYAnswer/calledanswer_roleto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementYAnswer/answerrequest_portrequiscompo"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//calledAnswer_RoleTo"/>
+    <genClasses ecoreClass="hADLM1.ecore#//SecurityCheck_PortRequis"/>
+    <genClasses ecoreClass="hADLM1.ecore#//SQLRequest_RoleFrom"/>
+    <genClasses ecoreClass="hADLM1.ecore#//AnswerRequest_PortFourniConfig"/>
+    <genClasses ecoreClass="hADLM1.ecore#//caller_RoleFrom"/>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementX1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX1/securitymanagement_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX1/securityquery_rolefrom"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//CQuery_PortRequis"/>
+    <genClasses ecoreClass="hADLM1.ecore#//SQLRequest_RoleTo"/>
+    <genClasses ecoreClass="hADLM1.ecore#//SecurityQuery_RoleTo"/>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementX3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX3/cquery_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX3/securityquery_rolefrom"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//SecurityQuery_RoleFrom"/>
+    <genClasses ecoreClass="hADLM1.ecore#//AnswerRequest_PortFourniCompo"/>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementY5">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY5/cquery_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementY5/securityquery_roleto"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//SecurityManager_Composant">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//SecurityManager_Composant/cquery_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//SecurityManager_Composant/securityauth_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//SecurityManager_Composant/cquery_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//SecurityManager_Composant/securityauth_portfourni"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//ConnectionManager_Composant">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ConnectionManager_Composant/externalsocket_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ConnectionManager_Composant/securitycheck_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ConnectionManager_Composant/dbquery_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ConnectionManager_Composant/dbquery_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ConnectionManager_Composant/securitycheck_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ConnectionManager_Composant/externalsocket_portfourni"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//bindingRequisServeurConfig">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//bindingRequisServeurConfig/receiverequestrequisconfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//bindingRequisServeurConfig/receive_request_portrequiscompo"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//SecurityManagement_PortRequis"/>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementX2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX2/queryint_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX2/sqlrequest_rolefrom"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementYRequest">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementYRequest/called_roleto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementYRequest/receive_request_portrequiscompo"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//Systeme_Configuration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/client_composant"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/serveur_composant"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/rpc_connectorexplicite"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/lienattachementx"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/lienattachementy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/sendrequest_portrequisconfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/answerrequest_portfourniconfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/externalbindinganswerrequest"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/externalbindingsendrequest"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/lienattachementxanswer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Systeme_Configuration/lienattachementyanswer"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementXAnswer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementXAnswer/calleranswer_rolefrom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementXAnswer/answerrequest_portfournicompo"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//bindingRequisServeurDetails">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//bindingRequisServeurDetails/receive_request_portrequiscompo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//bindingRequisServeurDetails/externalsocket_portrequis"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementX4">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX4/securityauth_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX4/clearencerequest_rolefrom"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//Database_Composant">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Database_Composant/queryint_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Database_Composant/securitymanagement_portrequis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Database_Composant/queryint_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//Database_Composant/securitymanagement_portfourni"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//CQuery_PortFourni"/>
+    <genClasses ecoreClass="hADLM1.ecore#//LienAttachementX5">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX5/dbquery_portfourni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementX5/sqlrequest_rolefrom"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//ReceiveRequestRequisConfig"/>
+    <genClasses ecoreClass="hADLM1.ecore#//ExternalBindingAnswerRequest">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ExternalBindingAnswerRequest/answerrequest_portfourniconfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ExternalBindingAnswerRequest/externalportfourniclientanswerrequest"/>
+    </genClasses>
+    <genClasses ecoreClass="hADLM1.ecore#//ExternalPortRequisClientSendRequest"/>
+    <genClasses ecoreClass="hADLM1.ecore#//ExternalPortFourniClientAnswerRequest"/>
+  </genPackages>
+  <genPackages prefix="HADL" disposableProviderFactory="true" ecorePackage="hADL.ecore#/">
+    <genClasses image="false" ecoreClass="hADL.ecore#//Element">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Element/childConfiguration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Element/childComposant"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Element/childConnecteur"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hADL.ecore#//Objet"/>
+    <nestedGenPackages prefix="Connecteurs" basePackage="hADL" disposableProviderFactory="true"
+        ecorePackage="hADL.ecore#//Connecteurs">
+      <genClasses ecoreClass="hADL.ecore#//Connecteurs/ConnecteurImplicite"/>
+      <genClasses ecoreClass="hADL.ecore#//Connecteurs/ConnecteurEnumere"/>
+      <genClasses ecoreClass="hADL.ecore#//Connecteurs/ConnecteurExplicite"/>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Connecteurs/Connecteur">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Connecteurs/Connecteur/rolefrom"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Connecteurs/Connecteur/roleto"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Composant" basePackage="hADL" disposableProviderFactory="true"
+        ecorePackage="hADL.ecore#//Composant">
+      <genClasses ecoreClass="hADL.ecore#//Composant/Composant">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Composant/Composant/propriete"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Composant/Composant/contraintes"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Composant/Composant/portrequiscompo"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Composant/Composant/portfournicompo"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Composant/Composant/lienbindingrequis"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Composant/Composant/lienbindingfourni"/>
+      </genClasses>
+      <genClasses ecoreClass="hADL.ecore#//Composant/Contraintes"/>
+      <genClasses ecoreClass="hADL.ecore#//Composant/ProprieteNonFonc"/>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Composant/Propriete"/>
+      <genClasses ecoreClass="hADL.ecore#//Composant/ProprieteFonc"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Liens" basePackage="hADL" resource="XML" disposableProviderFactory="true"
+        ecorePackage="hADL.ecore#//Liens">
+      <genClasses ecoreClass="hADL.ecore#//Liens/LienBindingFourni">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Liens/LienBindingFourni/portfournicompo"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Liens/LienBindingFourni/portfourniconfig"/>
+      </genClasses>
+      <genClasses ecoreClass="hADL.ecore#//Liens/LienBindingRequis">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Liens/LienBindingRequis/portrequiscompo"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Liens/LienBindingRequis/portrequisconfig"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Liens/LienAttachement"/>
+      <genClasses ecoreClass="hADL.ecore#//Liens/LienAttachementPFRF">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Liens/LienAttachementPFRF/portfourni"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Liens/LienAttachementPFRF/rolefrom"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Liens/Lien"/>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Liens/LienBinding"/>
+      <genClasses ecoreClass="hADL.ecore#//Liens/LienAttachementPRRT">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Liens/LienAttachementPRRT/portrequis"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Liens/LienAttachementPRRT/roleto"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Interfaces" basePackage="hADL" disposableProviderFactory="true"
+        ecorePackage="hADL.ecore#//Interfaces">
+      <genClasses ecoreClass="hADL.ecore#//Interfaces/PortFourniCompo"/>
+      <genClasses ecoreClass="hADL.ecore#//Interfaces/PortRequisConfig"/>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Interfaces/Port">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Interfaces/Port/observer"/>
+      </genClasses>
+      <genClasses ecoreClass="hADL.ecore#//Interfaces/ServiceRequis"/>
+      <genClasses ecoreClass="hADL.ecore#//Interfaces/ServiceFourni"/>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Interfaces/Interface">
+        <genOperations ecoreOperation="hADL.ecore#//Interfaces/Interface/notifyConfig">
+          <genParameters ecoreParameter="hADL.ecore#//Interfaces/Interface/notifyConfig/data"/>
+        </genOperations>
+      </genClasses>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Interfaces/Service"/>
+      <genClasses ecoreClass="hADL.ecore#//Interfaces/PortFourniConfig"/>
+      <genClasses ecoreClass="hADL.ecore#//Interfaces/PortRequisCompo"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Roles" basePackage="hADL" disposableProviderFactory="true"
+        ecorePackage="hADL.ecore#//Roles">
+      <genClasses ecoreClass="hADL.ecore#//Roles/RoleTo"/>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Roles/Role">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Roles/Role/observer"/>
+      </genClasses>
+      <genClasses ecoreClass="hADL.ecore#//Roles/RoleFrom"/>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Roles/Glue">
+        <genOperations ecoreOperation="hADL.ecore#//Roles/Glue/fonctLiaison">
+          <genParameters ecoreParameter="hADL.ecore#//Roles/Glue/fonctLiaison/role1"/>
+          <genParameters ecoreParameter="hADL.ecore#//Roles/Glue/fonctLiaison/role2"/>
+        </genOperations>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Configuration" basePackage="hADL" disposableProviderFactory="true"
+        ecorePackage="hADL.ecore#//Configuration">
+      <genClasses ecoreClass="hADL.ecore#//Configuration/Configuration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Configuration/Configuration/portrequisconfig"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Configuration/Configuration/portfourniconfig"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Configuration/Configuration/lienbindingrequis"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Configuration/Configuration/lienbindingfourni"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Configuration/Configuration/lienattachementprrt"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADL.ecore#//Configuration/Configuration/lienattachementpfrf"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="hADL.ecore#//Configuration/Observer">
+        <genOperations ecoreOperation="hADL.ecore#//Configuration/Observer/actionViaPort">
+          <genParameters ecoreParameter="hADL.ecore#//Configuration/Observer/actionViaPort/port"/>
+          <genParameters ecoreParameter="hADL.ecore#//Configuration/Observer/actionViaPort/data"/>
+        </genOperations>
+        <genOperations ecoreOperation="hADL.ecore#//Configuration/Observer/actionViaRole">
+          <genParameters ecoreParameter="hADL.ecore#//Configuration/Observer/actionViaRole/role"/>
+          <genParameters ecoreParameter="hADL.ecore#//Configuration/Observer/actionViaRole/data"/>
+        </genOperations>
+        <genOperations ecoreOperation="hADL.ecore#//Configuration/Observer/actionViaPort.1">
+          <genParameters ecoreParameter="hADL.ecore#//Configuration/Observer/actionViaPort.1/port"/>
+          <genParameters ecoreParameter="hADL.ecore#//Configuration/Observer/actionViaPort.1/data"/>
+        </genOperations>
+        <genOperations ecoreOperation="hADL.ecore#//Configuration/Observer/actionViaPort.2">
+          <genParameters ecoreParameter="hADL.ecore#//Configuration/Observer/actionViaPort.2/port"/>
+          <genParameters ecoreParameter="hADL.ecore#//Configuration/Observer/actionViaPort.2/data"/>
+        </genOperations>
+        <genOperations ecoreOperation="hADL.ecore#//Configuration/Observer/actionViaPort.3">
+          <genParameters ecoreParameter="hADL.ecore#//Configuration/Observer/actionViaPort.3/port"/>
+          <genParameters ecoreParameter="hADL.ecore#//Configuration/Observer/actionViaPort.3/data"/>
+        </genOperations>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

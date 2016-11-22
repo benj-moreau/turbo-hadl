@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="hADL" nsURI="http://www.example.org/hADL" nsPrefix="hADL">
+  <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true" eSuperTypes="#//Objet">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="childConfiguration" upperBound="-1"
+        eType="#//Configuration/Configuration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="childComposant" upperBound="-1"
+        eType="#//Composant/Composant" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="childConnecteur" upperBound="-1"
+        eType="#//Connecteurs/Connecteur" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Objet" abstract="true"/>
+  <eSubpackages name="Connecteurs" nsURI="Connecteurs" nsPrefix="com.alma">
+    <eClassifiers xsi:type="ecore:EClass" name="ConnecteurImplicite" eSuperTypes="#//Connecteurs/Connecteur"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConnecteurEnumere" eSuperTypes="#//Connecteurs/Connecteur"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ConnecteurExplicite" eSuperTypes="#//Connecteurs/Connecteur"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Connecteur" abstract="true" eSuperTypes="#//Element">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="rolefrom" upperBound="-1"
+          eType="#//Roles/RoleFrom" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="roleto" upperBound="-1"
+          eType="#//Roles/RoleTo" containment="true"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Composant" nsURI="Composant" nsPrefix="com.alma">
+    <eClassifiers xsi:type="ecore:EClass" name="Composant" eSuperTypes="#//Element #//Configuration/Observer">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="propriete" upperBound="-1"
+          eType="#//Composant/Propriete" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="contraintes" upperBound="-1"
+          eType="#//Composant/Contraintes" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="portrequiscompo" upperBound="-1"
+          eType="#//Interfaces/PortRequisCompo" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="portfournicompo" upperBound="-1"
+          eType="#//Interfaces/PortFourniCompo" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lienbindingrequis" upperBound="-1"
+          eType="#//Liens/LienBindingRequis" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lienbindingfourni" upperBound="-1"
+          eType="#//Liens/LienBindingFourni" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Contraintes" eSuperTypes="#//Objet"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ProprieteNonFonc" eSuperTypes="#//Composant/Propriete"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Propriete" abstract="true" eSuperTypes="#//Objet"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ProprieteFonc" eSuperTypes="#//Composant/Propriete"/>
+  </eSubpackages>
+  <eSubpackages name="Liens" nsURI="Liens" nsPrefix="com.alma">
+    <eClassifiers xsi:type="ecore:EClass" name="LienBindingFourni" eSuperTypes="#//Liens/LienBinding">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="portfournicompo" lowerBound="1"
+          eType="#//Interfaces/PortFourniCompo" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="portfourniconfig" lowerBound="1"
+          eType="#//Interfaces/PortFourniConfig" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LienBindingRequis" eSuperTypes="#//Liens/LienBinding">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="portrequiscompo" lowerBound="1"
+          eType="#//Interfaces/PortRequisCompo" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="portrequisconfig" lowerBound="1"
+          eType="#//Interfaces/PortRequisConfig" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LienAttachement" abstract="true" eSuperTypes="#//Liens/Lien"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LienAttachementPFRF" eSuperTypes="#//Liens/LienAttachement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="portfourni" lowerBound="1"
+          eType="#//Interfaces/PortFourniCompo" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="rolefrom" lowerBound="1"
+          eType="#//Roles/RoleFrom" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Lien" abstract="true" eSuperTypes="#//Objet"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LienBinding" abstract="true" eSuperTypes="#//Liens/Lien"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LienAttachementPRRT" eSuperTypes="#//Liens/LienAttachement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="portrequis" lowerBound="1"
+          eType="#//Interfaces/PortRequisCompo" containment="true">
+        <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+          <details key="namespace" value=""/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="roleto" lowerBound="1"
+          eType="#//Roles/RoleTo" containment="true"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Interfaces" nsURI="Interfaces" nsPrefix="com.alma">
+    <eClassifiers xsi:type="ecore:EClass" name="PortFourniCompo" eSuperTypes="#//Interfaces/Port"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PortRequisConfig" eSuperTypes="#//Interfaces/Port"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Port" abstract="true" eSuperTypes="#//Interfaces/Interface">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observer" lowerBound="1"
+          eType="#//Configuration/Observer" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ServiceRequis" eSuperTypes="#//Interfaces/Service"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ServiceFourni" eSuperTypes="#//Interfaces/Service"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Interface" abstract="true" interface="true"
+        eSuperTypes="#//Objet">
+      <eOperations name="notifyConfig">
+        <eParameters name="data" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Service" abstract="true" eSuperTypes="#//Interfaces/Interface"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PortFourniConfig" eSuperTypes="#//Interfaces/Port"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PortRequisCompo" eSuperTypes="#//Interfaces/Port"/>
+  </eSubpackages>
+  <eSubpackages name="Roles" nsURI="Roles" nsPrefix="com.alma">
+    <eClassifiers xsi:type="ecore:EClass" name="RoleTo" eSuperTypes="#//Roles/Role"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Role" abstract="true" eSuperTypes="#//Interfaces/Interface #//Roles/Glue">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="observer" lowerBound="1"
+          eType="#//Configuration/Observer" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RoleFrom" eSuperTypes="#//Roles/Role"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Glue" abstract="true" interface="true"
+        eSuperTypes="#//Objet">
+      <eOperations name="fonctLiaison">
+        <eParameters name="role1" eType="#//Roles/Role"/>
+        <eParameters name="role2" eType="#//Roles/Role"/>
+      </eOperations>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="Configuration" nsURI="Configuration" nsPrefix="com.alma">
+    <eClassifiers xsi:type="ecore:EClass" name="Configuration" eSuperTypes="#//Element #//Configuration/Observer">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="portrequisconfig" upperBound="-1"
+          eType="#//Interfaces/PortRequisConfig" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="portfourniconfig" lowerBound="1"
+          upperBound="-1" eType="#//Interfaces/PortFourniConfig" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lienbindingrequis" upperBound="-1"
+          eType="#//Liens/LienBindingRequis" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lienbindingfourni" upperBound="-1"
+          eType="#//Liens/LienBindingFourni" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementprrt"
+          upperBound="-1" eType="#//Liens/LienAttachementPRRT" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementpfrf"
+          upperBound="-1" eType="#//Liens/LienAttachementPFRF" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Observer" abstract="true" interface="true"
+        eSuperTypes="#//Objet">
+      <eOperations name="actionViaPort">
+        <eParameters name="port" eType="#//Interfaces/PortFourniConfig"/>
+        <eParameters name="data" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+      </eOperations>
+      <eOperations name="actionViaRole">
+        <eParameters name="role" eType="#//Roles/RoleTo"/>
+        <eParameters name="data" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+      </eOperations>
+      <eOperations name="actionViaPort">
+        <eParameters name="port" eType="#//Interfaces/PortRequisCompo"/>
+        <eParameters name="data" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+      </eOperations>
+      <eOperations name="actionViaPort">
+        <eParameters name="port" eType="#//Interfaces/PortRequisConfig"/>
+        <eParameters name="data" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+      </eOperations>
+      <eOperations name="actionViaPort">
+        <eParameters name="port" eType="#//Interfaces/PortFourniCompo"/>
+        <eParameters name="data" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+      </eOperations>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="hADLM1" nsURI="http://www.example.org/hADLM1" nsPrefix="hADLM1">
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityCheck_PortFourni" eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalSocket_PortFourni" eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementY6" eSuperTypes="hADL.ecore#//Liens/LienAttachementPRRT">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dbquery_portrequis" lowerBound="1"
+        eType="#//DBQuery_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sqlrequest_roleto" lowerBound="1"
+        eType="#//SQLRequest_RoleTo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Serveur_Composant" eSuperTypes="hADL.ecore#//Composant/Composant">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Serveur"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="receive_request_port" lowerBound="1"
+        eType="#//Receive_request_PortRequisCompo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serveurdetails_configuration"
+        lowerBound="1" eType="#//ServeurDetails_Configuration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answerrequest_portfournicompo"
+        lowerBound="1" eType="#//AnswerRequest_PortFourniCompo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bindingrequisserveurconfig"
+        lowerBound="1" eType="#//bindingRequisServeurConfig" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bindingserveurfournicompo"
+        lowerBound="1" eType="#//BindingServeurFourniCompo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="QueryInt_PortRequis" eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementY4" eSuperTypes="hADL.ecore#//Liens/LienAttachementPRRT">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitycheck_portrequis"
+        lowerBound="1" eType="#//SecurityCheck_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clearencerequest_roleto"
+        lowerBound="1" eType="#//ClearenceRequest_RoleTo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementX6" eSuperTypes="hADL.ecore#//Liens/LienAttachementPFRF">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitycheck_portfourni"
+        lowerBound="1" eType="#//SecurityCheck_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clearencerequest_rolefrom"
+        lowerBound="1" eType="#//ClearenceRequest_RoleFrom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalBindingSendRequest" eSuperTypes="hADL.ecore#//Liens/LienBindingRequis">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sendrequest_portrequisconfig"
+        lowerBound="1" eType="#//SendRequest_PortRequisConfig" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalportrequisclientsendrequest"
+        lowerBound="1" eType="#//ExternalPortRequisClientSendRequest" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Client_Composant" eSuperTypes="hADL.ecore#//Composant/Composant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="send_request_port" lowerBound="1"
+        eType="#//Send_request_PortFourniCompo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answerrequest_portrequiscompo"
+        lowerBound="1" eType="#//AnswerRequest_PortRequisCompo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalportfourniclientanswerrequest"
+        lowerBound="1" eType="#//ExternalPortFourniClientAnswerRequest" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalportrequisclientsendrequest"
+        lowerBound="1" eType="#//ExternalPortRequisClientSendRequest" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Receive_request_PortRequisCompo" eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SendRequest_PortRequisConfig" eSuperTypes="hADL.ecore#//Interfaces/PortRequisConfig"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClearenceRequest_RoleTo" eSuperTypes="#//called_RoleTo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SQLRequest_Connector" eSuperTypes="hADL.ecore#//Connecteurs/ConnecteurExplicite">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sqlrequest_roleto" lowerBound="1"
+        eType="#//SQLRequest_RoleTo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sqlrequest_rolefrom" lowerBound="1"
+        eType="#//SQLRequest_RoleFrom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Send_request_PortFourniCompo" eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityManagement_PortFourni" eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementY2" eSuperTypes="hADL.ecore#//Liens/LienAttachementPRRT">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="queryint_portrequis" lowerBound="1"
+        eType="#//QueryInt_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sqlrequest_roleto" lowerBound="1"
+        eType="#//SQLRequest_RoleTo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="callerAnswer_RoleFrom" eSuperTypes="hADL.ecore#//Roles/RoleFrom"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ServeurDetails_Configuration" eSuperTypes="hADL.ecore#//Configuration/Configuration">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connectionmanager_composant"
+        lowerBound="1" eType="#//ConnectionManager_Composant" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitymanager_composant"
+        lowerBound="1" eType="#//SecurityManager_Composant" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="database_composant" lowerBound="1"
+        eType="#//Database_Composant" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clearencerequest_connector"
+        lowerBound="1" eType="#//ClearenceRequest_Connector" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sqlrequest_connector" lowerBound="1"
+        eType="#//SQLRequest_Connector" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityquery_connector"
+        lowerBound="1" eType="#//SecurityQuery_Connector" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementx1" lowerBound="1"
+        eType="#//LienAttachementX1" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementx2" lowerBound="1"
+        eType="#//LienAttachementX2" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementx3" lowerBound="1"
+        eType="#//LienAttachementX3" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementx4" lowerBound="1"
+        eType="#//LienAttachementX4" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementx5" lowerBound="1"
+        eType="#//LienAttachementX5" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementx6" lowerBound="1"
+        eType="#//LienAttachementX6" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementy1" lowerBound="1"
+        eType="#//LienAttachementY1" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementy2" lowerBound="1"
+        eType="#//LienAttachementY2" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementy3" lowerBound="1"
+        eType="#//LienAttachementY3" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementy6" lowerBound="1"
+        eType="#//LienAttachementY6" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementy4" lowerBound="1"
+        eType="#//LienAttachementY4" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementy5" lowerBound="1"
+        eType="#//LienAttachementY5" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="receiverequestrequisconfig"
+        lowerBound="1" eType="#//ReceiveRequestRequisConfig" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answerrequest_portfourni"
+        lowerBound="1" eType="#//AnswerRequest_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bindingserveurfourni" lowerBound="1"
+        eType="#//BindingServeurFOurni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bindingrequisserveurdetails"
+        lowerBound="1" eType="#//bindingRequisServeurDetails" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityAuth_PortRequis" eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AnswerRequest_PortRequisCompo" eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementY1" eSuperTypes="hADL.ecore#//Liens/LienAttachementPRRT">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitymanagement_portrequis"
+        lowerBound="1" eType="#//SecurityManagement_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityquery_roleto" lowerBound="1"
+        eType="#//SecurityQuery_RoleTo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RPC_ConnectorExplicite" eSuperTypes="hADL.ecore#//Connecteurs/ConnecteurExplicite">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="caller_role" lowerBound="1"
+        eType="#//caller_RoleFrom" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="called_roleto" lowerBound="1"
+        eType="#//called_RoleTo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calledanswer_roleto" lowerBound="1"
+        eType="#//calledAnswer_RoleTo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calleranswer_rolefrom"
+        lowerBound="1" eType="#//callerAnswer_RoleFrom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementY3" eSuperTypes="hADL.ecore#//Liens/LienAttachementPRRT">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityauth_portrequis"
+        lowerBound="1" eType="#//SecurityAuth_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clearencerequest_roleto"
+        lowerBound="1" eType="#//ClearenceRequest_RoleTo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BindingServeurFourniCompo" eSuperTypes="hADL.ecore#//Liens/LienBindingFourni">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answerrequest_portfourni"
+        lowerBound="1" eType="#//AnswerRequest_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answerrequest_portfournicompo"
+        lowerBound="1" eType="#//AnswerRequest_PortFourniCompo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="QueryInt_PortFourni" eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="called_RoleTo" eSuperTypes="hADL.ecore#//Roles/RoleTo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClearenceRequest_Connector" eSuperTypes="hADL.ecore#//Connecteurs/ConnecteurExplicite">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clearencerequest_roleto"
+        lowerBound="1" eType="#//ClearenceRequest_RoleTo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clearencerequest_rolefrom"
+        lowerBound="1" eType="#//ClearenceRequest_RoleFrom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementXRequest" eSuperTypes="hADL.ecore#//Liens/LienAttachementPFRF">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="caller_rolefrom" lowerBound="1"
+        eType="#//caller_RoleFrom" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="w" lowerBound="1" eType="#//Send_request_PortFourniCompo"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityAuth_PortFourni" eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AnswerRequest_PortFourni" eSuperTypes="hADL.ecore#//Interfaces/PortFourniConfig"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityQuery_Connector" eSuperTypes="hADL.ecore#//Connecteurs/ConnecteurExplicite">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityquery_roleto" lowerBound="1"
+        eType="#//SecurityQuery_RoleTo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityquery_rolefrom"
+        lowerBound="1" eType="#//SecurityQuery_RoleFrom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalSocket_PortRequis" eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClearenceRequest_RoleFrom" eSuperTypes="hADL.ecore#//Roles/RoleFrom"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DBQuery_PortFourni" eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DBQuery_PortRequis" eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BindingServeurFOurni" eSuperTypes="hADL.ecore#//Liens/LienBindingFourni">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalsocket_portfourni"
+        lowerBound="1" eType="#//ExternalSocket_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answerrequest_portfourni"
+        lowerBound="1" eType="#//AnswerRequest_PortFourni" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementYAnswer" eSuperTypes="hADL.ecore#//Liens/LienAttachementPRRT">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calledanswer_roleto" lowerBound="1"
+        eType="#//calledAnswer_RoleTo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answerrequest_portrequiscompo"
+        lowerBound="1" eType="#//AnswerRequest_PortRequisCompo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="calledAnswer_RoleTo" eSuperTypes="hADL.ecore#//Roles/RoleTo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityCheck_PortRequis" eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SQLRequest_RoleFrom" eSuperTypes="hADL.ecore#//Roles/RoleFrom"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AnswerRequest_PortFourniConfig" eSuperTypes="hADL.ecore#//Interfaces/PortFourniConfig"/>
+  <eClassifiers xsi:type="ecore:EClass" name="caller_RoleFrom" eSuperTypes="hADL.ecore#//Roles/RoleFrom"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementX1" eSuperTypes="hADL.ecore#//Liens/LienAttachementPFRF">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitymanagement_portfourni"
+        lowerBound="1" eType="#//SecurityManagement_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityquery_rolefrom"
+        lowerBound="1" eType="#//SecurityQuery_RoleFrom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CQuery_PortRequis" eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SQLRequest_RoleTo" eSuperTypes="hADL.ecore#//Roles/RoleTo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityQuery_RoleTo" eSuperTypes="hADL.ecore#//Roles/RoleTo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementX3" eSuperTypes="hADL.ecore#//Liens/LienAttachementPFRF">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cquery_portfourni" lowerBound="1"
+        eType="#//CQuery_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityquery_rolefrom"
+        lowerBound="1" eType="#//SecurityQuery_RoleFrom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityQuery_RoleFrom" eSuperTypes="hADL.ecore#//Roles/RoleFrom"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AnswerRequest_PortFourniCompo" eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Answer_PortFourniCompo"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementY5" eSuperTypes="hADL.ecore#//Liens/LienAttachementPRRT">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cquery_portrequis" lowerBound="1"
+        eType="#//CQuery_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityquery_roleto" lowerBound="1"
+        eType="#//SecurityQuery_RoleTo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityManager_Composant" eSuperTypes="hADL.ecore#//Composant/Composant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cquery_portfourni" lowerBound="1"
+        eType="#//CQuery_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityauth_portrequis"
+        lowerBound="1" eType="#//SecurityAuth_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cquery_portrequis" lowerBound="1"
+        eType="#//CQuery_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityauth_portfourni"
+        lowerBound="1" eType="#//SecurityAuth_PortFourni" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConnectionManager_Composant" eSuperTypes="hADL.ecore#//Composant/Composant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalsocket_portrequis"
+        lowerBound="1" eType="#//ExternalSocket_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitycheck_portfourni"
+        lowerBound="1" eType="#//SecurityCheck_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dbquery_portfourni" lowerBound="1"
+        eType="#//DBQuery_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dbquery_portrequis" lowerBound="1"
+        eType="#//DBQuery_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitycheck_portrequis"
+        lowerBound="1" eType="#//SecurityCheck_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalsocket_portfourni"
+        lowerBound="1" eType="#//ExternalSocket_PortFourni" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="bindingRequisServeurConfig" eSuperTypes="hADL.ecore#//Liens/LienBindingRequis">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="receiverequestrequisconfig"
+        lowerBound="1" eType="#//ReceiveRequestRequisConfig" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="receive_request_portrequiscompo"
+        lowerBound="1" eType="#//Receive_request_PortRequisCompo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityManagement_PortRequis" eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementX2" eSuperTypes="hADL.ecore#//Liens/LienAttachementPFRF">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="queryint_portfourni" lowerBound="1"
+        eType="#//QueryInt_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sqlrequest_rolefrom" lowerBound="1"
+        eType="#//SQLRequest_RoleFrom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementYRequest" eSuperTypes="hADL.ecore#//Liens/LienAttachementPRRT">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="called_roleto" lowerBound="1"
+        eType="#//called_RoleTo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="receive_request_portrequiscompo"
+        lowerBound="1" eType="#//Receive_request_PortRequisCompo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Systeme_Configuration" eSuperTypes="hADL.ecore#//Configuration/Configuration">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="client_composant" lowerBound="1"
+        eType="#//Client_Composant" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serveur_composant" lowerBound="1"
+        eType="#//Serveur_Composant" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rpc_connectorexplicite"
+        lowerBound="1" eType="#//RPC_ConnectorExplicite" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementx" lowerBound="1"
+        eType="#//LienAttachementXRequest" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementy" lowerBound="1"
+        eType="#//LienAttachementYRequest" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sendrequest_portrequisconfig"
+        lowerBound="1" eType="#//SendRequest_PortRequisConfig" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answerrequest_portfourniconfig"
+        lowerBound="1" eType="#//AnswerRequest_PortFourniConfig" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalbindinganswerrequest"
+        lowerBound="1" eType="#//ExternalBindingAnswerRequest" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalbindingsendrequest"
+        lowerBound="1" eType="#//ExternalBindingSendRequest" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementxanswer"
+        lowerBound="1" eType="#//LienAttachementXAnswer" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lienattachementyanswer"
+        lowerBound="1" eType="#//LienAttachementYAnswer" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementXAnswer" eSuperTypes="hADL.ecore#//Liens/LienAttachementPFRF">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calleranswer_rolefrom"
+        lowerBound="1" eType="#//callerAnswer_RoleFrom" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answerrequest_portfournicompo"
+        lowerBound="1" eType="#//AnswerRequest_PortFourniCompo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="bindingRequisServeurDetails" eSuperTypes="hADL.ecore#//Liens/LienBindingRequis">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="receive_request_portrequiscompo"
+        lowerBound="1" eType="#//ReceiveRequestRequisConfig" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalsocket_portrequis"
+        lowerBound="1" eType="#//ExternalSocket_PortRequis" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementX4" eSuperTypes="hADL.ecore#//Liens/LienAttachementPFRF">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securityauth_portfourni"
+        lowerBound="1" eType="#//SecurityAuth_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clearencerequest_rolefrom"
+        lowerBound="1" eType="#//ClearenceRequest_RoleFrom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Database_Composant" eSuperTypes="hADL.ecore#//Composant/Composant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="queryint_portrequis" lowerBound="1"
+        eType="#//QueryInt_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitymanagement_portrequis"
+        lowerBound="1" eType="#//SecurityManagement_PortRequis" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="queryint_portfourni" lowerBound="1"
+        eType="#//QueryInt_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitymanagement_portfourni"
+        lowerBound="1" eType="#//SecurityManagement_PortFourni" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CQuery_PortFourni" eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LienAttachementX5" eSuperTypes="hADL.ecore#//Liens/LienAttachementPFRF">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dbquery_portfourni" lowerBound="1"
+        eType="#//DBQuery_PortFourni" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sqlrequest_rolefrom" lowerBound="1"
+        eType="#//SQLRequest_RoleFrom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReceiveRequestRequisConfig" eSuperTypes="hADL.ecore#//Interfaces/PortRequisConfig"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalBindingAnswerRequest" eSuperTypes="hADL.ecore#//Liens/LienBindingFourni">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answerrequest_portfourniconfig"
+        lowerBound="1" eType="#//AnswerRequest_PortFourniConfig" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalportfourniclientanswerrequest"
+        lowerBound="1" eType="#//ExternalPortFourniClientAnswerRequest" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalPortRequisClientSendRequest"
+      eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalPortFourniClientAnswerRequest"
+      eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo"/>
+</ecore:EPackage>
