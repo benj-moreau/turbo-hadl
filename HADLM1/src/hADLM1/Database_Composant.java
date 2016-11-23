@@ -3,6 +3,10 @@
 package hADLM1;
 
 import hADL.Composant.Composant;
+
+import java.util.HashMap;
+import java.util.logging.Logger;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -23,6 +27,10 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class Database_Composant extends Composant {
+	/**
+	 * @generated NOT
+	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
 	/**
 	 * The cached value of the '{@link #getQueryint_portrequis() <em>Queryint portrequis</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -282,5 +290,25 @@ public class Database_Composant extends Composant {
 		}
 		return super.eIsSet(featureID);
 	}
-
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public Object getResultRequest(Object data){
+		//Bouchon de la base
+	    HashMap<String, String> db = new HashMap<String, String>();
+	    db.put("key1", "value1");
+	    db.put("key2", "value2");
+	    db.put("key3", "value3");
+	    LOGGER.info("interoggation de la BD");
+	    Object res = db.get(data);
+	    if (res != null) {
+	    	LOGGER.info("correspondance trouvée : " + res);
+	    } else {
+	    	LOGGER.info("La requête n'a pas de reponse");
+	    }
+	    return res;
+	}
 } // Database_Composant
