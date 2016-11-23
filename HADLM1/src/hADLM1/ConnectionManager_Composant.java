@@ -3,6 +3,12 @@
 package hADLM1;
 
 import hADL.Composant.Composant;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.logging.Logger;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -25,6 +31,10 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ConnectionManager_Composant extends Composant {
+	/**
+	 * @generated NOT
+	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
 	/**
 	 * The cached value of the '{@link #getExternalsocket_portrequis() <em>Externalsocket portrequis</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -381,4 +391,18 @@ public class ConnectionManager_Composant extends Composant {
 		return super.eIsSet(featureID);
 	}
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public ArrayList connection(Object data) {
+		ArrayList LogedQuery = new ArrayList();
+		LogedQuery.add(0, data);
+		Scanner sc = new Scanner(System.in);
+		LOGGER.info("Entrez le mot de passe");
+		String str = sc.nextLine();
+		LogedQuery.add(1,str);
+		return LogedQuery;
+	}
 } // ConnectionManager_Composant

@@ -3,6 +3,11 @@
 package hADLM1;
 
 import hADL.Composant.Composant;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.logging.Logger;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -23,6 +28,10 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class SecurityManager_Composant extends Composant {
+	/**
+	 * @generated NOT
+	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
 	/**
 	 * The cached value of the '{@link #getCquery_portfourni() <em>Cquery portfourni</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -281,6 +290,19 @@ public class SecurityManager_Composant extends Composant {
 				return securityauth_portfourni != null;
 		}
 		return super.eIsSet(featureID);
+	}
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public boolean authentification(Object data) {
+		// mot de passe bouchon
+		String mdp = "admin";
+		ArrayList<Object> newData = (ArrayList<Object>) data;
+		LOGGER.info("test mot de passe");
+		return newData.get(1).equals(mdp);
 	}
 
 } // SecurityManager_Composant

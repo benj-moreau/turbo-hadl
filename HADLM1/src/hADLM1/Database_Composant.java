@@ -3,6 +3,7 @@
 package hADLM1;
 
 import hADL.Composant.Composant;
+import hADL.Interfaces.PortRequisCompo;
 
 import java.util.HashMap;
 import java.util.logging.Logger;

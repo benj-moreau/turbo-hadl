@@ -13,6 +13,6 @@ public class M0Test {
 		//création factory
 		HADLM1Factory f = HADLM1Factory.init();
 		Systeme_Configuration cs = f.createSystemeConfigurationPerso(null);
-		cs.sendRequest("bonjour");
+		cs.sendRequest("key1");
 	}
 }
