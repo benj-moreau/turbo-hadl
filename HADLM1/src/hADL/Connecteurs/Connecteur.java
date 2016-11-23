@@ -291,6 +291,7 @@ public abstract class Connecteur extends Element {
 		return super.eIsSet(featureID);
 	}
 
+	
 	public void notify(RoleFrom roleFrom, Object data) {
 		// TODO Auto-generated method stub
 		

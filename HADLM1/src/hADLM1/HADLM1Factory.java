@@ -15,7 +15,9 @@ import hADL.Configuration.Configuration;
 import hADL.Configuration.Observer;
 import hADL.Connecteurs.Connecteur;
 import hADL.Interfaces.PortFourniCompo;
+import hADL.Interfaces.PortFourniConfig;
 import hADL.Interfaces.PortRequisCompo;
+import hADL.Interfaces.PortRequisConfig;
 import hADL.Liens.LienAttachementPFRF;
 import hADL.Liens.LienAttachementPRRT;
 import hADL.Liens.LienBindingFourni;
@@ -587,6 +589,7 @@ public class HADLM1Factory extends EFactoryImpl {
 		caller_RoleFrom caller_RoleFrom = createcaller_RoleFrom();
 		calledAnswer_RoleTo calledAnswer_RoleTo = createcalledAnswer_RoleTo();
 		callerAnswer_RoleFrom callerAnswer_RoleFrom = createcallerAnswer_RoleFrom();
+		
 		called_RoleTo.setObserver(observer);
 		caller_RoleFrom.setObserver(observer);
 		calledAnswer_RoleTo.setObserver(observer);
@@ -609,7 +612,7 @@ public class HADLM1Factory extends EFactoryImpl {
 		
 		RoleFrom[] rolesFrom = new RoleFrom[2];
 		rolesFrom[0] = caller_RoleFrom;
-		rolesFrom[0] = callerAnswer_RoleFrom;
+		rolesFrom[1] = callerAnswer_RoleFrom;
 		
 		//5-affectation des listes
 		connector.setRoleto(rolesTo);
@@ -686,6 +689,14 @@ public class HADLM1Factory extends EFactoryImpl {
 		
 		configuration.setAnswerrequest_portfourniconfig(answerRequest_PortFourniConfig);
 		configuration.setSendrequest_portrequisconfig(sendRequest_PortRequisConfig);
+		
+		PortFourniConfig[] fournis = new PortFourniConfig[1];
+		fournis[0] = answerRequest_PortFourniConfig;
+		PortRequisConfig[] requis = new PortRequisConfig[1];
+		requis[0] = sendRequest_PortRequisConfig;
+		
+		configuration.setPortfourniconfig(fournis);
+		configuration.setPortrequisconfig(requis);
 		
 		//5-creation des liens binding
 		ExternalBindingAnswerRequest externalBindingAnswerRequest = createExternalBindingAnswerRequest();

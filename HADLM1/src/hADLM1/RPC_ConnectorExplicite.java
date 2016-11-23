@@ -3,6 +3,10 @@
 package hADLM1;
 
 import hADL.Connecteurs.ConnecteurExplicite;
+import hADL.Roles.RoleFrom;
+
+import java.util.logging.Logger;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -282,5 +286,22 @@ public class RPC_ConnectorExplicite extends ConnecteurExplicite {
 		}
 		return super.eIsSet(featureID);
 	}
+	/**
+	 * @generated NOT
+	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
+	/**
+	 * @generated NOT
+	 */
+	public void notify(RoleFrom roleFrom, Object data) {
+		if(caller_role.equals(roleFrom)){
+			LOGGER.info("Reception requete "+ data);
+			called_roleto.notifyConfig(data);
+		}else if(calleranswer_rolefrom.equals(roleFrom)){
+			LOGGER.info("Reception reponse "+ data);
+		}
+		
+	}
+	
 
 } // RPC_ConnectorExplicite

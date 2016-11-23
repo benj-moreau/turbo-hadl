@@ -28,7 +28,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class Client_Composant extends Composant {
-	private static final Logger LOGGER = Logger.getAnonymousLogger();
 	/**
 	 * The cached value of the '{@link #getSend_request_port() <em>Send request port</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -291,12 +290,18 @@ public class Client_Composant extends Composant {
 	/**
 	 * @generated NOT
 	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
+	/**
+	 * @generated NOT
+	 */
 	@Override
 	public void notify(PortRequisCompo portrequis, Object data) {
 		if(portrequis.equals(externalportrequisclientsendrequest)){
-			LOGGER.info("Reception d'une requete");
+			LOGGER.info("Reception d'une requete "+data.toString());
+			send_request_port.notifyConfig(data);
 		}else if(portrequis.equals(answerrequest_portrequiscompo)){
-			
+			LOGGER.info("Reception d'une reponse ");
+			externalportrequisclientsendrequest.notifyConfig(data);
 		}
 	}
 	/**
@@ -304,8 +309,11 @@ public class Client_Composant extends Composant {
 	 */
 	@Override
 	public void notify(PortFourniCompo portDestinataire, Object data) {
-		// TODO Auto-generated method stub
-		
+		if(portDestinataire.equals(externalportrequisclientsendrequest)){
+			LOGGER.info("transfert de la reponse au systeme " + data.toString());
+		}else if(portDestinataire.equals(send_request_port)){
+			LOGGER.info("transfert de la reponse au connecteur "+data.toString());
+		}
 	}
 	
 } // Client_Composant

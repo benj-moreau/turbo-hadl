@@ -3,6 +3,10 @@
 package hADLM1;
 
 import hADL.Configuration.Configuration;
+import hADL.Interfaces.PortFourniConfig;
+
+import java.util.logging.Logger;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -1165,4 +1169,18 @@ public class ServeurDetails_Configuration extends Configuration {
 		return super.eIsSet(featureID);
 	}
 
+	/**
+	 * @generated NOT
+	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
+	/**
+	 * @param data 
+	 * @generated NOT
+	 */
+	protected void notify(PortFourniConfig portDestinataire, Object data) {
+		if (portDestinataire.equals(answerrequest_portfourni)) {
+			
+		}
+		
+	}
 } // ServeurDetails_Configuration
