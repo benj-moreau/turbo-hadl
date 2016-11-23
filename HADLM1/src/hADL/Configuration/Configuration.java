@@ -775,6 +775,8 @@ public class Configuration extends Element implements Observer {
 					for(PortRequisCompo portrequisCourant: compo.getPortrequiscompo()){
 						if(portrequis.equals(portrequisCourant)){
 							compo.notify(portrequis, data);
+							/*//search binding
+							compo.actionViaPort(portrequis, data);*/
 							return;
 						}
 					}
@@ -794,6 +796,7 @@ public class Configuration extends Element implements Observer {
 			boolean find = false;
 			for (LienBindingRequis lien : lienbindingrequis) {
 				if(port.equals(lien.getPortCompo())){
+					System.out.println("found");
 					portDestinataire = (PortRequisConfig) lien.getPortConfig();
 					break;
 				}
@@ -801,6 +804,7 @@ public class Configuration extends Element implements Observer {
 			if(portDestinataire!=null){
 				for(PortRequisConfig portrequisCourant: getPortrequisconfig()){
 					if(portDestinataire.equals(portrequisCourant)){
+						System.out.println("egalite");
 						actionViaPort(portDestinataire, data);
 						return;
 					}
@@ -837,8 +841,8 @@ public class Configuration extends Element implements Observer {
 		//on cherche d'abord les liens d'attachments, si pas trouvé on cherche les bindings
 		RoleFrom roleDestinataire = null;
 		for (LienAttachementPFRF lien : lienattachementpfrf) {
-			if (port.equals(lien.getTo())){
-				roleDestinataire = (RoleFrom) lien.getFrom();
+			if (port.equals(lien.getFrom())){
+				roleDestinataire = (RoleFrom) lien.getTo();
 				break;
 			}
 		}
@@ -861,7 +865,7 @@ public class Configuration extends Element implements Observer {
 			}
 
 			for(PortFourniConfig portFourniCourant: this.portfourniconfig){
-				if(portDestinataire.equals(portFourniCourant)){
+				if(portFourniCourant.equals(portDestinataire)){
 					notify(portDestinataire, data);
 					return;
 				}

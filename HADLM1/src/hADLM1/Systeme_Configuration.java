@@ -640,7 +640,7 @@ public class Systeme_Configuration extends Configuration {
 	* @generated NOT
 	*/
 	public void sendRequest(Object data) {
-		LOGGER.info("Begin Send Request");
+		LOGGER.info("Debut: Send Request");
 		actionViaPort(sendrequest_portrequisconfig, data);
 	}
 	
