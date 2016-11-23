@@ -3,6 +3,11 @@
 package hADLM1;
 
 import hADL.Composant.Composant;
+import hADL.Interfaces.PortFourniCompo;
+import hADL.Interfaces.PortRequisCompo;
+
+import java.util.logging.Logger;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -23,6 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class Client_Composant extends Composant {
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
 	/**
 	 * The cached value of the '{@link #getSend_request_port() <em>Send request port</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -282,6 +288,24 @@ public class Client_Composant extends Composant {
 		}
 		return super.eIsSet(featureID);
 	}
-
+	/**
+	 * @generated NOT
+	 */
+	@Override
+	public void notify(PortRequisCompo portrequis, Object data) {
+		if(portrequis.equals(externalportrequisclientsendrequest)){
+			LOGGER.info("Reception d'une requete");
+		}else if(portrequis.equals(answerrequest_portrequiscompo)){
+			
+		}
+	}
+	/**
+	 * @generated NOT
+	 */
+	@Override
+	public void notify(PortFourniCompo portDestinataire, Object data) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 } // Client_Composant

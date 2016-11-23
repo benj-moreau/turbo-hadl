@@ -799,12 +799,10 @@ public class Configuration extends Element implements Observer {
 				}
 			}
 			if(portDestinataire!=null){
-				for(Configuration config: childConfiguration){
-					for(PortRequisConfig portrequisCourant: config.getPortrequisconfig()){
-						if(portDestinataire.equals(portrequisCourant)){
-							config.actionViaPort(portDestinataire, data);
-							return;
-						}
+				for(PortRequisConfig portrequisCourant: getPortrequisconfig()){
+					if(portDestinataire.equals(portrequisCourant)){
+						actionViaPort(portDestinataire, data);
+						return;
 					}
 				}
 			}	
@@ -854,20 +852,20 @@ public class Configuration extends Element implements Observer {
 				}
 			}
 		}else{// pas d'attachement, il faut trouver un binding
-			PortFourniCompo portDestinataire= null;
+			PortFourniConfig portDestinataire= null;
 			for (LienBindingFourni lien : lienbindingfourni) {
-				if(port.equals(lien.getPortConfig())){
-					portDestinataire = (PortFourniCompo) lien.getPortCompo();
+				if(port.equals(lien.getPortCompo())){
+					portDestinataire = (PortFourniConfig) lien.getPortConfig();
 					break;
 				}
 			}
-			for(Composant compo : childComposant){
-				for(PortFourniCompo portFourniCourant: compo.getPortfournicompo()){
-					if(portDestinataire.equals(portFourniCourant)){
-						compo.notify(portDestinataire, data);
-						return;
-					}
+
+			for(PortFourniConfig portFourniCourant: this.portfourniconfig){
+				if(portDestinataire.equals(portFourniCourant)){
+					notify(portDestinataire, data);
+					return;
 				}
+				
 			}
 			if(portDestinataire==null){
 				System.out.println("erreur: non trouvé, peut etre que c'est un binding composant->config");

@@ -4,6 +4,9 @@ package hADLM1;
 
 import hADL.Configuration.Configuration;
 import hADL.Interfaces.PortFourniConfig;
+
+import java.util.logging.Logger;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -31,6 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class Systeme_Configuration extends Configuration {
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
 	/**
 	 * The cached value of the '{@link #getClient_composant() <em>Client composant</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -631,4 +635,13 @@ public class Systeme_Configuration extends Configuration {
 		//int id = port.
 		System.out.println(this.eContainerFeatureID());
 	}
+	
+	/**
+	* @generated NOT
+	*/
+	public void sendRequest(Object data) {
+		LOGGER.info("Begin Send Request");
+		actionViaPort(sendrequest_portrequisconfig, data);
+	}
+	
 } // Systeme_Configuration

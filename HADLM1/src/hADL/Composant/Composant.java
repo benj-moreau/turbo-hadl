@@ -822,14 +822,14 @@ public class Composant extends Element implements Observer {
 					break;
 				}
 			}
-			for(Composant compo : childComposant){
-				for(PortRequisCompo portrequisCourant: compo.getPortrequiscompo()){
-					if(portDestinataire.equals(portrequisCourant)){
-						compo.notify(portDestinataire, data);
-						return;
-					}
+			
+			for(PortRequisCompo portrequisCourant: this.portrequiscompo){
+				if(portDestinataire.equals(portrequisCourant)){
+					this.notify(portDestinataire, data);
+					return;
 				}
 			}
+			
 		}
 
 	/**
@@ -837,43 +837,7 @@ public class Composant extends Element implements Observer {
 	 */
 	@Override
 	public void actionViaPort(PortFourniCompo port, Object data) {
-		//on cherche d'abord les liens d'attachments, si pas trouvé on cherche les bindings
-		RoleFrom roleDestinataire = null;
-		for (LienAttachementPFRF lien : lienattachementpfrf) {
-			if (port.equals(lien.getTo())){
-				roleDestinataire = (RoleFrom) lien.getFrom();
-				break;
-			}
-		}
-		if(roleDestinataire!=null){
-			for(Connecteur connecteur : childConnecteur){
-				for(RoleFrom roleFrom: connecteur.getRolefrom()){
-					if(roleDestinataire.equals(roleFrom)){
-						connecteur.notify(roleFrom, data);
-						return;
-					}
-				}
-			}
-		}else{// pas d'attachement, il faut trouver un binding
-			PortFourniCompo portDestinataire= null;
-			for (LienBindingFourni lien : lienbindingfourni) {
-				if(port.equals(lien.getPortConfig())){
-					portDestinataire = (PortFourniCompo) lien.getPortCompo();
-					break;
-				}
-			}
-			for(Composant compo : childComposant){
-				for(PortFourniCompo portFourniCourant: compo.getPortfournicompo()){
-					if(portDestinataire.equals(portFourniCourant)){
-						compo.notify(portDestinataire, data);
-						return;
-					}
-				}
-			}
-			if(portDestinataire==null){
-				System.out.println("erreur: non trouvé, peut etre que c'est un binding composant->config");
-			}
-		}
+		
 	}
 					
 				
@@ -882,20 +846,18 @@ public class Composant extends Element implements Observer {
 	 */
 	@Override
 	public void actionViaPort(PortFourniConfig port, Object data) {				
-		PortFourniConfig portDestinataire= null;
+		PortFourniCompo portDestinataire= null;
 		for (LienBindingFourni lien : lienbindingfourni) {
-			if(port.equals(lien.getPortCompo())){
-				portDestinataire = (PortFourniConfig) lien.getPortConfig();
+			if(port.equals(lien.getPortConfig())){
+				portDestinataire = (PortFourniCompo) lien.getPortCompo();
 				break;
 			}
 		}
 		if(portDestinataire!=null){
-			for(Configuration config: childConfiguration){
-				for(PortRequisConfig portrequisCourant: config.getPortrequisconfig()){
-					if(portDestinataire.equals(portrequisCourant)){
-						config.notify(portDestinataire, data);
-						return;
-					}
+			for(PortFourniCompo portrequisCourant: this.portfournicompo){
+				if(portDestinataire.equals(portrequisCourant)){
+					notify(portDestinataire, data);
+					return;
 				}
 			}
 		}	
@@ -906,23 +868,7 @@ public class Composant extends Element implements Observer {
 	 */
 	@Override
 	public void actionViaRole(RoleTo role, Object data) {
-		PortRequisCompo portrequis = null;
-		for (LienAttachementPRRT lien : lienattachementprrt) {
-				if (role.equals(lien.getFrom())){
-					portrequis = (PortRequisCompo) lien.getTo();
-					break;
-				}
-		}
-		if(portrequis != null){
-			for(Composant compo : childComposant){
-					for(PortRequisCompo portrequisCourant: compo.getPortrequiscompo()){
-						if(portrequis.equals(portrequisCourant)){
-							compo.notify(portrequis, data);
-							return;
-						}
-					}
-			}
-		}		
+		
 	}
 
 } // Composant
