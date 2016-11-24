@@ -404,6 +404,7 @@ public class ConnectionManager_Composant extends Composant {
 			LOGGER.info("Reception d'une requete par l'exterieur "+data.toString());
 			connection(data);
 			securitycheck_portfourni.notifyConfig(data);
+			
 		}else if (portrequis.equals(dbquery_portrequis)){
 			LOGGER.info("Reception d'une reponse par la DB"+data.toString());
 		}else if(portrequis.equals(securitycheck_portrequis)){
