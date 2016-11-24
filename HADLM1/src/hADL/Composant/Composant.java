@@ -23,6 +23,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 
 import java.util.List;
+import java.util.logging.Logger;
+
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 
@@ -785,7 +787,10 @@ public class Composant extends Element implements Observer {
 		// TODO Auto-generated method stub
 		
 	}
-	
+	/**
+	 * @generated NOT
+	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
 	/**
 	 * @generated NOT
 	 */
@@ -803,6 +808,7 @@ public class Composant extends Element implements Observer {
 				for(Configuration config: childConfiguration){
 					for(PortRequisConfig portrequisCourant: config.getPortrequisconfig()){
 						if(portDestinataire.equals(portrequisCourant)){
+							LOGGER.info("passage par "+ config);
 							config.actionViaPort(portDestinataire, data);
 							return;
 						}

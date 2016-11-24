@@ -421,6 +421,14 @@ public class HADLM1Factory extends EFactoryImpl {
 		
 		configuration.setReceiverequestrequisconfig(receiveRequestRequisConfig);
 		configuration.setAnswerrequest_portfourni(answerRequest_PortFourniConfig);
+		
+		PortFourniConfig[] fournis = new PortFourniConfig[1];
+		fournis[0] = answerRequest_PortFourniConfig;
+		PortRequisConfig[] requis = new PortRequisConfig[1];
+		requis[0] = receiveRequestRequisConfig;
+		
+		configuration.setPortfourniconfig(fournis);
+		configuration.setPortrequisconfig(requis);
 		//5-creation des liens binding
 		BindingServeurFOurni bindingServeurFOurni = createBindingServeurFOurni();
 		bindingRequisServeurDetails bindingRequisServeurDetails = createbindingRequisServeurDetails();

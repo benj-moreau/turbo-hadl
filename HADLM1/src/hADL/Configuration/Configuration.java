@@ -15,6 +15,7 @@ import hADL.Liens.LienBindingFourni;
 import hADL.Liens.LienBindingRequis;
 import hADL.Roles.RoleFrom;
 import hADL.Roles.RoleTo;
+import hADLM1.ServeurDetails_Configuration;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -796,7 +797,6 @@ public class Configuration extends Element implements Observer {
 			boolean find = false;
 			for (LienBindingRequis lien : lienbindingrequis) {
 				if(port.equals(lien.getPortCompo())){
-					System.out.println("found");
 					portDestinataire = (PortRequisConfig) lien.getPortConfig();
 					break;
 				}
@@ -804,7 +804,6 @@ public class Configuration extends Element implements Observer {
 			if(portDestinataire!=null){
 				for(PortRequisConfig portrequisCourant: getPortrequisconfig()){
 					if(portDestinataire.equals(portrequisCourant)){
-						System.out.println("egalite");
 						actionViaPort(portDestinataire, data);
 						return;
 					}
@@ -850,6 +849,7 @@ public class Configuration extends Element implements Observer {
 			for(Connecteur connecteur : childConnecteur){
 				for(RoleFrom roleFrom: connecteur.getRolefrom()){
 					if(roleDestinataire.equals(roleFrom)){
+						System.out.println("trouve "+ roleFrom);
 						connecteur.notify(roleFrom, data);
 						return;
 					}

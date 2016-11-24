@@ -3,6 +3,8 @@
 package hADLM1;
 
 import hADL.Composant.Composant;
+import hADL.Interfaces.PortFourniCompo;
+import hADL.Interfaces.PortRequisCompo;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -34,7 +36,6 @@ public class ConnectionManager_Composant extends Composant {
 	/**
 	 * @generated NOT
 	 */
-	private static final Logger LOGGER = Logger.getAnonymousLogger();
 	/**
 	 * The cached value of the '{@link #getExternalsocket_portrequis() <em>Externalsocket portrequis</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -390,7 +391,38 @@ public class ConnectionManager_Composant extends Composant {
 		}
 		return super.eIsSet(featureID);
 	}
-
+	/**
+	 * @generated NOT
+	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
+	/**
+	 * @generated NOT
+	 */
+	@Override
+	public void notify(PortRequisCompo portrequis, Object data) {
+		if(portrequis.equals(externalsocket_portrequis)){
+			LOGGER.info("Reception d'une requete par l'exterieur "+data.toString());
+			connection(data);
+			securitycheck_portfourni.notifyConfig(data);
+		}else if (portrequis.equals(dbquery_portrequis)){
+			LOGGER.info("Reception d'une reponse par la DB"+data.toString());
+		}else if(portrequis.equals(securitycheck_portrequis)){
+			LOGGER.info("Reception de reponse par la le composant de securité "+data.toString());
+		}else{
+			LOGGER.warning("mauvais port");
+		}
+	}
+	/**
+	 * @generated NOT
+	 */
+	@Override
+	public void notify(PortFourniCompo portDestinataire, Object data) {
+		/*if(portDestinataire.equals()){
+			LOGGER.info("transfert de la reponse au systeme " + data.toString());
+		}else if(portDestinataire.equals()){
+			LOGGER.info("transfert de la reponse au connecteur "+data.toString());
+		}*/
+	}
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
