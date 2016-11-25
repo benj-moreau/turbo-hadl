@@ -3,6 +3,10 @@
 package hADLM1;
 
 import hADL.Connecteurs.ConnecteurExplicite;
+import hADL.Roles.RoleFrom;
+
+import java.util.logging.Logger;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -183,6 +187,22 @@ public class ClearenceRequest_Connector extends ConnecteurExplicite {
 				return clearencerequest_rolefrom != null;
 		}
 		return super.eIsSet(featureID);
+	}
+	/**
+	 * @generated NOT
+	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
+	/**
+	 * @generated NOT
+	 */
+	public void notify(RoleFrom roleFrom, Object data) {
+		if(clearencerequest_rolefrom.equals(roleFrom)){
+			LOGGER.info("Reception requete via le connection manager "+ data);
+			clearencerequest_roleto.notifyConfig(data);
+		}else{
+			LOGGER.warning("mauvais role");
+		}
+		
 	}
 
 } // ClearenceRequest_Connector

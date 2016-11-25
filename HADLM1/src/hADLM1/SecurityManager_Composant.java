@@ -3,6 +3,8 @@
 package hADLM1;
 
 import hADL.Composant.Composant;
+import hADL.Interfaces.PortFourniCompo;
+import hADL.Interfaces.PortRequisCompo;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -28,10 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class SecurityManager_Composant extends Composant {
-	/**
-	 * @generated NOT
-	 */
-	private static final Logger LOGGER = Logger.getAnonymousLogger();
+
 	/**
 	 * The cached value of the '{@link #getCquery_portfourni() <em>Cquery portfourni</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -292,6 +291,39 @@ public class SecurityManager_Composant extends Composant {
 		return super.eIsSet(featureID);
 	}
 	
+	/**
+	 * @generated NOT
+	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
+	/**
+	 * @generated NOT
+	 */
+	@Override
+	public void notify(PortRequisCompo portrequis, Object data) {
+		if(portrequis.equals(securityauth_portrequis)){
+			LOGGER.info("Reception d'une requete le connect manager "+data.toString());
+			if(authentification(data)){
+				cquery_portfourni.notifyConfig(((ArrayList)data).get(0));
+			}else{
+				securityauth_portfourni.notifyConfig("auth failed");
+			}	
+		}else if (portrequis.equals(cquery_portrequis)){
+			LOGGER.info("Reception par la DB "+data.toString());
+		}else{
+			LOGGER.warning("mauvais port");
+		}
+	}
+	/**
+	 * @generated NOT
+	 */
+	@Override
+	public void notify(PortFourniCompo portDestinataire, Object data) {
+		/*if(portDestinataire.equals()){
+			LOGGER.info("transfert de la reponse au systeme " + data.toString());
+		}else if(portDestinataire.equals()){
+			LOGGER.info("transfert de la reponse au connecteur "+data.toString());
+		}*/
+	}
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

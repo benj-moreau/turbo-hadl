@@ -8,7 +8,6 @@ import hADLM1.Systeme_Configuration;
 import hADLM1.util.HADLM1AdapterFactory;
 
 public class M0Test {
-
 	public static void main(String[] args) {
 		//création factory
 		HADLM1Factory f = HADLM1Factory.init();
