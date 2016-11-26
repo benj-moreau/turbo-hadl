@@ -15,11 +15,18 @@ import hADL.Liens.LienBindingFourni;
 import hADL.Liens.LienBindingRequis;
 import hADL.Roles.RoleFrom;
 import hADL.Roles.RoleTo;
+import hADLM1.AnswerRequest_PortFourni;
+import hADLM1.AnswerRequest_PortFourniConfig;
+import hADLM1.ExternalSocket_PortFourni;
+import hADLM1.ReceiveRequestRequisConfig;
+
 import java.lang.reflect.InvocationTargetException;
 
 import java.util.Collection;
 
 import java.util.List;
+import java.util.logging.Logger;
+
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 
@@ -833,6 +840,10 @@ public class Configuration extends Element implements Observer {
 	/**
 	 * @generated NOT
 	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
+	/**
+	 * @generated NOT
+	 */
 	@Override
 	public void actionViaPort(PortFourniCompo port, Object data) {
 		//on cherche d'abord les liens d'attachments, si pas trouvé on cherche les bindings
@@ -861,10 +872,11 @@ public class Configuration extends Element implements Observer {
 					break;
 				}
 			}
-
 			for(PortFourniConfig portFourniCourant: this.portfourniconfig){
 				if(portFourniCourant.equals(portDestinataire)){
-					notify(portDestinataire, data);
+					LOGGER.info("Passage part Configuration");
+					portDestinataire.notifyConfig(data);
+					//actionViaPort(portDestinataire, data);
 					return;
 				}
 				

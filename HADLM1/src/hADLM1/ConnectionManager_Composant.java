@@ -403,9 +403,11 @@ public class ConnectionManager_Composant extends Composant {
 			data = connection(data);
 			securitycheck_portfourni.notifyConfig(data);
 		}else if (portrequis.equals(dbquery_portrequis)){
-			LOGGER.info("Reception d'une reponse par la DB"+data.toString());
+			LOGGER.info("Reception d'une reponse par la DB: "+data.toString());
+			externalsocket_portfourni.notifyConfig(data);
 		}else if(portrequis.equals(securitycheck_portrequis)){
-			LOGGER.info("Reception de reponse par la le composant de securité "+data.toString());
+			LOGGER.info("Reception de reponse par la le composant de securité: "+data.toString());
+			
 		}else{
 			LOGGER.warning("mauvais port");
 		}

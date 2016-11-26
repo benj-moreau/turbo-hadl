@@ -356,10 +356,9 @@ public class Serveur_Composant extends Composant {
 	 */
 	@Override
 	public void notify(PortFourniCompo portDestinataire, Object data) {
-		/*if(portDestinataire.equals()){
-			LOGGER.info("transfert de la reponse au systeme " + data.toString());
-		}else if(portDestinataire.equals()){
-			LOGGER.info("transfert de la reponse au connecteur "+data.toString());
-		}*/
+		if(portDestinataire.equals(answerrequest_portfournicompo)){
+			LOGGER.info("Reception de reponse par la configuration details " + data.toString());
+			answerrequest_portfournicompo.notifyConfig(data);
+		}
 	}
 } // Serveur_Composant

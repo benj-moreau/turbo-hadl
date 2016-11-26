@@ -299,6 +299,7 @@ public class RPC_ConnectorExplicite extends ConnecteurExplicite {
 			called_roleto.notifyConfig(data);
 		}else if(calleranswer_rolefrom.equals(roleFrom)){
 			LOGGER.info("Serveur -> Client");
+			calledanswer_roleto.notifyConfig(data);
 		}else{
 			LOGGER.warning("mauvais role");
 		}

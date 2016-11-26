@@ -301,7 +301,7 @@ public class Client_Composant extends Composant {
 			send_request_port.notifyConfig(data);
 		}else if(portrequis.equals(answerrequest_portrequiscompo)){
 			LOGGER.info("Reception d'une reponse ");
-			externalportrequisclientsendrequest.notifyConfig(data);
+			externalportfourniclientanswerrequest.notifyConfig(data);
 		}
 	}
 	/**

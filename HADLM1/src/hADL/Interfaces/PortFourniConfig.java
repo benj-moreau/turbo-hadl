@@ -4,6 +4,8 @@ package hADL.Interfaces;
 
 import org.eclipse.emf.ecore.EClass;
 
+import hADLM1.AnswerRequest_PortFourni;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Port Fourni Config</b></em>'.
