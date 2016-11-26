@@ -368,6 +368,14 @@ public class HADLM1AdapterFactory extends AdapterFactoryImpl {
 				return createExternalPortFourniClientAnswerRequestAdapter();
 			}
 			@Override
+			public Adapter caseRetourClearenceRequest_RoleFrom(RetourClearenceRequest_RoleFrom object) {
+				return createRetourClearenceRequest_RoleFromAdapter();
+			}
+			@Override
+			public Adapter caseRetourClearenceRequest_RoleTo(RetourClearenceRequest_RoleTo object) {
+				return createRetourClearenceRequest_RoleToAdapter();
+			}
+			@Override
 			public Adapter caseObjet(Objet object) {
 				return createObjetAdapter();
 			}
@@ -1418,6 +1426,34 @@ public class HADLM1AdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createExternalPortFourniClientAnswerRequestAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link hADLM1.RetourClearenceRequest_RoleFrom <em>Retour Clearence Request Role From</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see hADLM1.RetourClearenceRequest_RoleFrom
+	 * @generated
+	 */
+	public Adapter createRetourClearenceRequest_RoleFromAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link hADLM1.RetourClearenceRequest_RoleTo <em>Retour Clearence Request Role To</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see hADLM1.RetourClearenceRequest_RoleTo
+	 * @generated
+	 */
+	public Adapter createRetourClearenceRequest_RoleToAdapter() {
 		return null;
 	}
 

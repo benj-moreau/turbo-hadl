@@ -211,7 +211,6 @@ public class HADLM1Switch<T> extends Switch<T> {
 			case HADLM1Package.CLEARENCE_REQUEST_ROLE_TO: {
 				ClearenceRequest_RoleTo clearenceRequest_RoleTo = (ClearenceRequest_RoleTo)theEObject;
 				T result = caseClearenceRequest_RoleTo(clearenceRequest_RoleTo);
-				if (result == null) result = casecalled_RoleTo(clearenceRequest_RoleTo);
 				if (result == null) result = caseRoleTo(clearenceRequest_RoleTo);
 				if (result == null) result = caseRole(clearenceRequest_RoleTo);
 				if (result == null) result = caseInterface(clearenceRequest_RoleTo);
@@ -776,6 +775,28 @@ public class HADLM1Switch<T> extends Switch<T> {
 				if (result == null) result = casePort(externalPortFourniClientAnswerRequest);
 				if (result == null) result = caseInterface(externalPortFourniClientAnswerRequest);
 				if (result == null) result = caseObjet(externalPortFourniClientAnswerRequest);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case HADLM1Package.RETOUR_CLEARENCE_REQUEST_ROLE_FROM: {
+				RetourClearenceRequest_RoleFrom retourClearenceRequest_RoleFrom = (RetourClearenceRequest_RoleFrom)theEObject;
+				T result = caseRetourClearenceRequest_RoleFrom(retourClearenceRequest_RoleFrom);
+				if (result == null) result = caseRoleFrom(retourClearenceRequest_RoleFrom);
+				if (result == null) result = caseRole(retourClearenceRequest_RoleFrom);
+				if (result == null) result = caseInterface(retourClearenceRequest_RoleFrom);
+				if (result == null) result = caseGlue(retourClearenceRequest_RoleFrom);
+				if (result == null) result = caseObjet(retourClearenceRequest_RoleFrom);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case HADLM1Package.RETOUR_CLEARENCE_REQUEST_ROLE_TO: {
+				RetourClearenceRequest_RoleTo retourClearenceRequest_RoleTo = (RetourClearenceRequest_RoleTo)theEObject;
+				T result = caseRetourClearenceRequest_RoleTo(retourClearenceRequest_RoleTo);
+				if (result == null) result = caseRoleTo(retourClearenceRequest_RoleTo);
+				if (result == null) result = caseRole(retourClearenceRequest_RoleTo);
+				if (result == null) result = caseInterface(retourClearenceRequest_RoleTo);
+				if (result == null) result = caseGlue(retourClearenceRequest_RoleTo);
+				if (result == null) result = caseObjet(retourClearenceRequest_RoleTo);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1785,6 +1806,36 @@ public class HADLM1Switch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseExternalPortFourniClientAnswerRequest(ExternalPortFourniClientAnswerRequest object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Retour Clearence Request Role From</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Retour Clearence Request Role From</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRetourClearenceRequest_RoleFrom(RetourClearenceRequest_RoleFrom object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Retour Clearence Request Role To</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Retour Clearence Request Role To</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRetourClearenceRequest_RoleTo(RetourClearenceRequest_RoleTo object) {
 		return null;
 	}
 

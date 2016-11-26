@@ -39,7 +39,7 @@ public class LienAttachementY4 extends LienAttachementPRRT {
 	 * @generated
 	 * @ordered
 	 */
-	protected ClearenceRequest_RoleTo clearencerequest_roleto;
+	protected RetourClearenceRequest_RoleTo clearencerequest_roleto;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,10 +97,10 @@ public class LienAttachementY4 extends LienAttachementPRRT {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Clearencerequest roleto</em>' containment reference.
-	 * @see #setClearencerequest_roleto(ClearenceRequest_RoleTo)
+	 * @see #setClearencerequest_roleto(RetourClearenceRequest_RoleTo)
 	 * @generated
 	 */
-	public ClearenceRequest_RoleTo getClearencerequest_roleto() {
+	public RetourClearenceRequest_RoleTo getClearencerequest_roleto() {
 		return clearencerequest_roleto;
 	}
 
@@ -112,7 +112,7 @@ public class LienAttachementY4 extends LienAttachementPRRT {
 	 * @see #getClearencerequest_roleto()
 	 * @generated
 	 */
-	public void setClearencerequest_roleto(ClearenceRequest_RoleTo newClearencerequest_roleto) {
+	public void setClearencerequest_roleto(RetourClearenceRequest_RoleTo newClearencerequest_roleto) {
 		clearencerequest_roleto = newClearencerequest_roleto;
 	}
 
@@ -144,7 +144,7 @@ public class LienAttachementY4 extends LienAttachementPRRT {
 				setSecuritycheck_portrequis((SecurityCheck_PortRequis)newValue);
 				return;
 			case HADLM1Package.LIEN_ATTACHEMENT_Y4__CLEARENCEREQUEST_ROLETO:
-				setClearencerequest_roleto((ClearenceRequest_RoleTo)newValue);
+				setClearencerequest_roleto((RetourClearenceRequest_RoleTo)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -162,7 +162,7 @@ public class LienAttachementY4 extends LienAttachementPRRT {
 				setSecuritycheck_portrequis((SecurityCheck_PortRequis)null);
 				return;
 			case HADLM1Package.LIEN_ATTACHEMENT_Y4__CLEARENCEREQUEST_ROLETO:
-				setClearencerequest_roleto((ClearenceRequest_RoleTo)null);
+				setClearencerequest_roleto((RetourClearenceRequest_RoleTo)null);
 				return;
 		}
 		super.eUnset(featureID);

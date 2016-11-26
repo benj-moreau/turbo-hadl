@@ -3,6 +3,10 @@
 package hADLM1;
 
 import hADL.Connecteurs.ConnecteurExplicite;
+import hADL.Roles.RoleFrom;
+
+import java.util.logging.Logger;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -185,4 +189,21 @@ public class SQLRequest_Connector extends ConnecteurExplicite {
 		return super.eIsSet(featureID);
 	}
 
+	/**
+	 * @generated NOT
+	 */
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
+	/**
+	 * @generated NOT
+	 */
+	public void notify(RoleFrom roleFrom, Object data) {
+		if(sqlrequest_rolefrom.equals(roleFrom)){
+			LOGGER.info("DB -> Connection Manager");
+			sqlrequest_roleto.notifyConfig(data);
+			
+		}else{
+			LOGGER.warning("mauvais role");
+		}
+		
+	}
 } // SQLRequest_Connector

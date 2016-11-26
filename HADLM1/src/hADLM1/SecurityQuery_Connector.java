@@ -198,7 +198,7 @@ public class SecurityQuery_Connector extends ConnecteurExplicite {
 	 */
 	public void notify(RoleFrom roleFrom, Object data) {
 		if(securityquery_rolefrom.equals(roleFrom)){
-			LOGGER.info("Reception requete via security manager "+ data);
+			LOGGER.info("SecurityManager->DB");
 			securityquery_roleto.notifyConfig(data);
 		}else{
 			LOGGER.warning("mauvais role");

@@ -5,8 +5,6 @@ package hADLM1;
 import hADL.Composant.Composant;
 import hADL.Interfaces.PortFourniCompo;
 import hADL.Interfaces.PortRequisCompo;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.Logger;

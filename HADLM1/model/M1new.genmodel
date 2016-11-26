@@ -103,6 +103,8 @@
     <genClasses ecoreClass="hADLM1.ecore#//ClearenceRequest_Connector">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ClearenceRequest_Connector/clearencerequest_roleto"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ClearenceRequest_Connector/clearencerequest_rolefrom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ClearenceRequest_Connector/retourclearencerequest_rolefrom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//ClearenceRequest_Connector/retourclearencerequest_roleto"/>
     </genClasses>
     <genClasses ecoreClass="hADLM1.ecore#//LienAttachementXRequest">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hADLM1.ecore#//LienAttachementXRequest/caller_rolefrom"/>
@@ -218,6 +220,8 @@
     </genClasses>
     <genClasses ecoreClass="hADLM1.ecore#//ExternalPortRequisClientSendRequest"/>
     <genClasses ecoreClass="hADLM1.ecore#//ExternalPortFourniClientAnswerRequest"/>
+    <genClasses ecoreClass="hADLM1.ecore#//RetourClearenceRequest_RoleFrom"/>
+    <genClasses ecoreClass="hADLM1.ecore#//RetourClearenceRequest_RoleTo"/>
   </genPackages>
   <genPackages prefix="HADL" disposableProviderFactory="true" ecorePackage="hADL.ecore#/">
     <genClasses image="false" ecoreClass="hADL.ecore#//Element">

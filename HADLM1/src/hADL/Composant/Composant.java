@@ -5,7 +5,6 @@ package hADL.Composant;
 import hADL.Configuration.Configuration;
 import hADL.Configuration.ConfigurationPackage;
 import hADL.Configuration.Observer;
-import hADL.Connecteurs.Connecteur;
 import hADL.Element;
 
 import hADL.Interfaces.PortFourniCompo;
@@ -13,11 +12,8 @@ import hADL.Interfaces.PortFourniConfig;
 import hADL.Interfaces.PortRequisCompo;
 
 import hADL.Interfaces.PortRequisConfig;
-import hADL.Liens.LienAttachementPFRF;
-import hADL.Liens.LienAttachementPRRT;
 import hADL.Liens.LienBindingFourni;
 import hADL.Liens.LienBindingRequis;
-import hADL.Roles.RoleFrom;
 import hADL.Roles.RoleTo;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;

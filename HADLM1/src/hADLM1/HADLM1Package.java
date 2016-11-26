@@ -956,51 +956,6 @@ public class HADLM1Package extends EPackageImpl {
 	public static final int CALLED_ROLE_TO = 25;
 
 	/**
-	 * The feature id for the '<em><b>Observer</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	public static final int CALLED_ROLE_TO__OBSERVER = RolesPackage.ROLE_TO__OBSERVER;
-
-	/**
-	 * The number of structural features of the '<em>called Role To</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	public static final int CALLED_ROLE_TO_FEATURE_COUNT = RolesPackage.ROLE_TO_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Notify Config</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	public static final int CALLED_ROLE_TO___NOTIFY_CONFIG__OBJECT = RolesPackage.ROLE_TO___NOTIFY_CONFIG__OBJECT;
-
-	/**
-	 * The operation id for the '<em>Fonct Liaison</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	public static final int CALLED_ROLE_TO___FONCT_LIAISON__ROLE_ROLE = RolesPackage.ROLE_TO___FONCT_LIAISON__ROLE_ROLE;
-
-	/**
-	 * The number of operations of the '<em>called Role To</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	public static final int CALLED_ROLE_TO_OPERATION_COUNT = RolesPackage.ROLE_TO_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link hADLM1.ClearenceRequest_RoleTo <em>Clearence Request Role To</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1017,7 +972,7 @@ public class HADLM1Package extends EPackageImpl {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CLEARENCE_REQUEST_ROLE_TO__OBSERVER = CALLED_ROLE_TO__OBSERVER;
+	public static final int CLEARENCE_REQUEST_ROLE_TO__OBSERVER = RolesPackage.ROLE_TO__OBSERVER;
 
 	/**
 	 * The number of structural features of the '<em>Clearence Request Role To</em>' class.
@@ -1026,7 +981,7 @@ public class HADLM1Package extends EPackageImpl {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CLEARENCE_REQUEST_ROLE_TO_FEATURE_COUNT = CALLED_ROLE_TO_FEATURE_COUNT + 0;
+	public static final int CLEARENCE_REQUEST_ROLE_TO_FEATURE_COUNT = RolesPackage.ROLE_TO_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Notify Config</em>' operation.
@@ -1035,7 +990,7 @@ public class HADLM1Package extends EPackageImpl {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CLEARENCE_REQUEST_ROLE_TO___NOTIFY_CONFIG__OBJECT = CALLED_ROLE_TO___NOTIFY_CONFIG__OBJECT;
+	public static final int CLEARENCE_REQUEST_ROLE_TO___NOTIFY_CONFIG__OBJECT = RolesPackage.ROLE_TO___NOTIFY_CONFIG__OBJECT;
 
 	/**
 	 * The operation id for the '<em>Fonct Liaison</em>' operation.
@@ -1044,7 +999,7 @@ public class HADLM1Package extends EPackageImpl {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CLEARENCE_REQUEST_ROLE_TO___FONCT_LIAISON__ROLE_ROLE = CALLED_ROLE_TO___FONCT_LIAISON__ROLE_ROLE;
+	public static final int CLEARENCE_REQUEST_ROLE_TO___FONCT_LIAISON__ROLE_ROLE = RolesPackage.ROLE_TO___FONCT_LIAISON__ROLE_ROLE;
 
 	/**
 	 * The number of operations of the '<em>Clearence Request Role To</em>' class.
@@ -1053,7 +1008,7 @@ public class HADLM1Package extends EPackageImpl {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CLEARENCE_REQUEST_ROLE_TO_OPERATION_COUNT = CALLED_ROLE_TO_OPERATION_COUNT + 0;
+	public static final int CLEARENCE_REQUEST_ROLE_TO_OPERATION_COUNT = RolesPackage.ROLE_TO_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link hADLM1.SQLRequest_Connector <em>SQL Request Connector</em>}' class.
@@ -2149,6 +2104,51 @@ public class HADLM1Package extends EPackageImpl {
 	public static final int QUERY_INT_PORT_FOURNI_OPERATION_COUNT = InterfacesPackage.PORT_FOURNI_COMPO_OPERATION_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Observer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int CALLED_ROLE_TO__OBSERVER = RolesPackage.ROLE_TO__OBSERVER;
+
+	/**
+	 * The number of structural features of the '<em>called Role To</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int CALLED_ROLE_TO_FEATURE_COUNT = RolesPackage.ROLE_TO_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Notify Config</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int CALLED_ROLE_TO___NOTIFY_CONFIG__OBJECT = RolesPackage.ROLE_TO___NOTIFY_CONFIG__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Fonct Liaison</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int CALLED_ROLE_TO___FONCT_LIAISON__ROLE_ROLE = RolesPackage.ROLE_TO___FONCT_LIAISON__ROLE_ROLE;
+
+	/**
+	 * The number of operations of the '<em>called Role To</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int CALLED_ROLE_TO_OPERATION_COUNT = RolesPackage.ROLE_TO_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link hADLM1.ClearenceRequest_Connector <em>Clearence Request Connector</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2222,13 +2222,31 @@ public class HADLM1Package extends EPackageImpl {
 	public static final int CLEARENCE_REQUEST_CONNECTOR__CLEARENCEREQUEST_ROLEFROM = ConnecteursPackage.CONNECTEUR_EXPLICITE_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Retourclearencerequest rolefrom</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int CLEARENCE_REQUEST_CONNECTOR__RETOURCLEARENCEREQUEST_ROLEFROM = ConnecteursPackage.CONNECTEUR_EXPLICITE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Retourclearencerequest roleto</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int CLEARENCE_REQUEST_CONNECTOR__RETOURCLEARENCEREQUEST_ROLETO = ConnecteursPackage.CONNECTEUR_EXPLICITE_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Clearence Request Connector</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CLEARENCE_REQUEST_CONNECTOR_FEATURE_COUNT = ConnecteursPackage.CONNECTEUR_EXPLICITE_FEATURE_COUNT + 2;
+	public static final int CLEARENCE_REQUEST_CONNECTOR_FEATURE_COUNT = ConnecteursPackage.CONNECTEUR_EXPLICITE_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>Clearence Request Connector</em>' class.
@@ -5097,6 +5115,116 @@ public class HADLM1Package extends EPackageImpl {
 	public static final int EXTERNAL_PORT_FOURNI_CLIENT_ANSWER_REQUEST_OPERATION_COUNT = InterfacesPackage.PORT_FOURNI_COMPO_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link hADLM1.RetourClearenceRequest_RoleFrom <em>Retour Clearence Request Role From</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see hADLM1.RetourClearenceRequest_RoleFrom
+	 * @see hADLM1.HADLM1Package#getRetourClearenceRequest_RoleFrom()
+	 * @generated
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_FROM = 67;
+
+	/**
+	 * The feature id for the '<em><b>Observer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_FROM__OBSERVER = RolesPackage.ROLE_FROM__OBSERVER;
+
+	/**
+	 * The number of structural features of the '<em>Retour Clearence Request Role From</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_FROM_FEATURE_COUNT = RolesPackage.ROLE_FROM_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Notify Config</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_FROM___NOTIFY_CONFIG__OBJECT = RolesPackage.ROLE_FROM___NOTIFY_CONFIG__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Fonct Liaison</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_FROM___FONCT_LIAISON__ROLE_ROLE = RolesPackage.ROLE_FROM___FONCT_LIAISON__ROLE_ROLE;
+
+	/**
+	 * The number of operations of the '<em>Retour Clearence Request Role From</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_FROM_OPERATION_COUNT = RolesPackage.ROLE_FROM_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link hADLM1.RetourClearenceRequest_RoleTo <em>Retour Clearence Request Role To</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see hADLM1.RetourClearenceRequest_RoleTo
+	 * @see hADLM1.HADLM1Package#getRetourClearenceRequest_RoleTo()
+	 * @generated
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_TO = 68;
+
+	/**
+	 * The feature id for the '<em><b>Observer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_TO__OBSERVER = RolesPackage.ROLE_TO__OBSERVER;
+
+	/**
+	 * The number of structural features of the '<em>Retour Clearence Request Role To</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_TO_FEATURE_COUNT = RolesPackage.ROLE_TO_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Notify Config</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_TO___NOTIFY_CONFIG__OBJECT = RolesPackage.ROLE_TO___NOTIFY_CONFIG__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Fonct Liaison</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_TO___FONCT_LIAISON__ROLE_ROLE = RolesPackage.ROLE_TO___FONCT_LIAISON__ROLE_ROLE;
+
+	/**
+	 * The number of operations of the '<em>Retour Clearence Request Role To</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	public static final int RETOUR_CLEARENCE_REQUEST_ROLE_TO_OPERATION_COUNT = RolesPackage.ROLE_TO_OPERATION_COUNT + 0;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -5564,6 +5692,20 @@ public class HADLM1Package extends EPackageImpl {
 	 * @generated
 	 */
 	private EClass externalPortFourniClientAnswerRequestEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass retourClearenceRequest_RoleFromEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass retourClearenceRequest_RoleToEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -6696,6 +6838,34 @@ public class HADLM1Package extends EPackageImpl {
 	public EReference getClearenceRequest_Connector_Clearencerequest_rolefrom() {
 		return (EReference)clearenceRequest_ConnectorEClass.getEStructuralFeatures().get(1);
 	}
+
+	/**
+	 * Returns the meta object for the containment reference '{@link hADLM1.ClearenceRequest_Connector#getRetourclearencerequest_rolefrom <em>Retourclearencerequest rolefrom</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Retourclearencerequest rolefrom</em>'.
+	 * @see hADLM1.ClearenceRequest_Connector#getRetourclearencerequest_rolefrom()
+	 * @see #getClearenceRequest_Connector()
+	 * @generated
+	 */
+	public EReference getClearenceRequest_Connector_Retourclearencerequest_rolefrom() {
+		return (EReference)clearenceRequest_ConnectorEClass.getEStructuralFeatures().get(2);
+	}
+
+
+	/**
+	 * Returns the meta object for the containment reference '{@link hADLM1.ClearenceRequest_Connector#getRetourclearencerequest_roleto <em>Retourclearencerequest roleto</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Retourclearencerequest roleto</em>'.
+	 * @see hADLM1.ClearenceRequest_Connector#getRetourclearencerequest_roleto()
+	 * @see #getClearenceRequest_Connector()
+	 * @generated
+	 */
+	public EReference getClearenceRequest_Connector_Retourclearencerequest_roleto() {
+		return (EReference)clearenceRequest_ConnectorEClass.getEStructuralFeatures().get(3);
+	}
+
 
 	/**
 	 * Returns the meta object for class '{@link hADLM1.LienAttachementXRequest <em>Lien Attachement XRequest</em>}'.
@@ -7898,6 +8068,32 @@ public class HADLM1Package extends EPackageImpl {
 
 
 	/**
+	 * Returns the meta object for class '{@link hADLM1.RetourClearenceRequest_RoleFrom <em>Retour Clearence Request Role From</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Retour Clearence Request Role From</em>'.
+	 * @see hADLM1.RetourClearenceRequest_RoleFrom
+	 * @generated
+	 */
+	public EClass getRetourClearenceRequest_RoleFrom() {
+		return retourClearenceRequest_RoleFromEClass;
+	}
+
+
+	/**
+	 * Returns the meta object for class '{@link hADLM1.RetourClearenceRequest_RoleTo <em>Retour Clearence Request Role To</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Retour Clearence Request Role To</em>'.
+	 * @see hADLM1.RetourClearenceRequest_RoleTo
+	 * @generated
+	 */
+	public EClass getRetourClearenceRequest_RoleTo() {
+		return retourClearenceRequest_RoleToEClass;
+	}
+
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8035,6 +8231,8 @@ public class HADLM1Package extends EPackageImpl {
 		clearenceRequest_ConnectorEClass = createEClass(CLEARENCE_REQUEST_CONNECTOR);
 		createEReference(clearenceRequest_ConnectorEClass, CLEARENCE_REQUEST_CONNECTOR__CLEARENCEREQUEST_ROLETO);
 		createEReference(clearenceRequest_ConnectorEClass, CLEARENCE_REQUEST_CONNECTOR__CLEARENCEREQUEST_ROLEFROM);
+		createEReference(clearenceRequest_ConnectorEClass, CLEARENCE_REQUEST_CONNECTOR__RETOURCLEARENCEREQUEST_ROLEFROM);
+		createEReference(clearenceRequest_ConnectorEClass, CLEARENCE_REQUEST_CONNECTOR__RETOURCLEARENCEREQUEST_ROLETO);
 
 		lienAttachementXRequestEClass = createEClass(LIEN_ATTACHEMENT_XREQUEST);
 		createEReference(lienAttachementXRequestEClass, LIEN_ATTACHEMENT_XREQUEST__CALLER_ROLEFROM);
@@ -8170,6 +8368,10 @@ public class HADLM1Package extends EPackageImpl {
 		externalPortRequisClientSendRequestEClass = createEClass(EXTERNAL_PORT_REQUIS_CLIENT_SEND_REQUEST);
 
 		externalPortFourniClientAnswerRequestEClass = createEClass(EXTERNAL_PORT_FOURNI_CLIENT_ANSWER_REQUEST);
+
+		retourClearenceRequest_RoleFromEClass = createEClass(RETOUR_CLEARENCE_REQUEST_ROLE_FROM);
+
+		retourClearenceRequest_RoleToEClass = createEClass(RETOUR_CLEARENCE_REQUEST_ROLE_TO);
 	}
 
 	/**
@@ -8199,8 +8401,8 @@ public class HADLM1Package extends EPackageImpl {
 		InterfacesPackage theInterfacesPackage = (InterfacesPackage)EPackage.Registry.INSTANCE.getEPackage(InterfacesPackage.eNS_URI);
 		LiensPackage theLiensPackage = (LiensPackage)EPackage.Registry.INSTANCE.getEPackage(LiensPackage.eNS_URI);
 		ComposantPackage theComposantPackage = (ComposantPackage)EPackage.Registry.INSTANCE.getEPackage(ComposantPackage.eNS_URI);
-		ConnecteursPackage theConnecteursPackage = (ConnecteursPackage)EPackage.Registry.INSTANCE.getEPackage(ConnecteursPackage.eNS_URI);
 		RolesPackage theRolesPackage = (RolesPackage)EPackage.Registry.INSTANCE.getEPackage(RolesPackage.eNS_URI);
+		ConnecteursPackage theConnecteursPackage = (ConnecteursPackage)EPackage.Registry.INSTANCE.getEPackage(ConnecteursPackage.eNS_URI);
 		ConfigurationPackage theConfigurationPackage = (ConfigurationPackage)EPackage.Registry.INSTANCE.getEPackage(ConfigurationPackage.eNS_URI);
 
 		// Create type parameters
@@ -8219,7 +8421,7 @@ public class HADLM1Package extends EPackageImpl {
 		client_ComposantEClass.getESuperTypes().add(theComposantPackage.getComposant());
 		receive_request_PortRequisCompoEClass.getESuperTypes().add(theInterfacesPackage.getPortRequisCompo());
 		sendRequest_PortRequisConfigEClass.getESuperTypes().add(theInterfacesPackage.getPortRequisConfig());
-		clearenceRequest_RoleToEClass.getESuperTypes().add(this.getcalled_RoleTo());
+		clearenceRequest_RoleToEClass.getESuperTypes().add(theRolesPackage.getRoleTo());
 		sqlRequest_ConnectorEClass.getESuperTypes().add(theConnecteursPackage.getConnecteurExplicite());
 		send_request_PortFourniCompoEClass.getESuperTypes().add(theInterfacesPackage.getPortFourniCompo());
 		securityManagement_PortFourniEClass.getESuperTypes().add(theInterfacesPackage.getPortFourniCompo());
@@ -8275,6 +8477,8 @@ public class HADLM1Package extends EPackageImpl {
 		externalBindingAnswerRequestEClass.getESuperTypes().add(theLiensPackage.getLienBindingFourni());
 		externalPortRequisClientSendRequestEClass.getESuperTypes().add(theInterfacesPackage.getPortRequisCompo());
 		externalPortFourniClientAnswerRequestEClass.getESuperTypes().add(theInterfacesPackage.getPortFourniCompo());
+		retourClearenceRequest_RoleFromEClass.getESuperTypes().add(theRolesPackage.getRoleFrom());
+		retourClearenceRequest_RoleToEClass.getESuperTypes().add(theRolesPackage.getRoleTo());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(securityCheck_PortFourniEClass, SecurityCheck_PortFourni.class, "SecurityCheck_PortFourni", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -8296,7 +8500,7 @@ public class HADLM1Package extends EPackageImpl {
 
 		initEClass(lienAttachementY4EClass, LienAttachementY4.class, "LienAttachementY4", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getLienAttachementY4_Securitycheck_portrequis(), this.getSecurityCheck_PortRequis(), null, "securitycheck_portrequis", null, 1, 1, LienAttachementY4.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getLienAttachementY4_Clearencerequest_roleto(), this.getClearenceRequest_RoleTo(), null, "clearencerequest_roleto", null, 1, 1, LienAttachementY4.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLienAttachementY4_Clearencerequest_roleto(), this.getRetourClearenceRequest_RoleTo(), null, "clearencerequest_roleto", null, 1, 1, LienAttachementY4.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(lienAttachementX6EClass, LienAttachementX6.class, "LienAttachementX6", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getLienAttachementX6_Securitycheck_portfourni(), this.getSecurityCheck_PortFourni(), null, "securitycheck_portfourni", null, 1, 1, LienAttachementX6.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -8385,6 +8589,8 @@ public class HADLM1Package extends EPackageImpl {
 		initEClass(clearenceRequest_ConnectorEClass, ClearenceRequest_Connector.class, "ClearenceRequest_Connector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getClearenceRequest_Connector_Clearencerequest_roleto(), this.getClearenceRequest_RoleTo(), null, "clearencerequest_roleto", null, 1, 1, ClearenceRequest_Connector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClearenceRequest_Connector_Clearencerequest_rolefrom(), this.getClearenceRequest_RoleFrom(), null, "clearencerequest_rolefrom", null, 1, 1, ClearenceRequest_Connector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClearenceRequest_Connector_Retourclearencerequest_rolefrom(), this.getRetourClearenceRequest_RoleFrom(), null, "retourclearencerequest_rolefrom", null, 1, 1, ClearenceRequest_Connector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClearenceRequest_Connector_Retourclearencerequest_roleto(), this.getRetourClearenceRequest_RoleTo(), null, "retourclearencerequest_roleto", null, 1, 1, ClearenceRequest_Connector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(lienAttachementXRequestEClass, LienAttachementXRequest.class, "LienAttachementXRequest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getLienAttachementXRequest_Caller_rolefrom(), this.getcaller_RoleFrom(), null, "caller_rolefrom", null, 1, 1, LienAttachementXRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -8497,7 +8703,7 @@ public class HADLM1Package extends EPackageImpl {
 
 		initEClass(lienAttachementX4EClass, LienAttachementX4.class, "LienAttachementX4", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getLienAttachementX4_Securityauth_portfourni(), this.getSecurityAuth_PortFourni(), null, "securityauth_portfourni", null, 1, 1, LienAttachementX4.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getLienAttachementX4_Clearencerequest_rolefrom(), this.getClearenceRequest_RoleFrom(), null, "clearencerequest_rolefrom", null, 1, 1, LienAttachementX4.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLienAttachementX4_Clearencerequest_rolefrom(), this.getRetourClearenceRequest_RoleFrom(), null, "clearencerequest_rolefrom", null, 1, 1, LienAttachementX4.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(database_ComposantEClass, Database_Composant.class, "Database_Composant", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDatabase_Composant_Queryint_portrequis(), this.getQueryInt_PortRequis(), null, "queryint_portrequis", null, 1, 1, Database_Composant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -8520,6 +8726,10 @@ public class HADLM1Package extends EPackageImpl {
 		initEClass(externalPortRequisClientSendRequestEClass, ExternalPortRequisClientSendRequest.class, "ExternalPortRequisClientSendRequest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(externalPortFourniClientAnswerRequestEClass, ExternalPortFourniClientAnswerRequest.class, "ExternalPortFourniClientAnswerRequest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(retourClearenceRequest_RoleFromEClass, RetourClearenceRequest_RoleFrom.class, "RetourClearenceRequest_RoleFrom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(retourClearenceRequest_RoleToEClass, RetourClearenceRequest_RoleTo.class, "RetourClearenceRequest_RoleTo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -9280,6 +9490,22 @@ public class HADLM1Package extends EPackageImpl {
 		 * @generated
 		 */
 		public static final EReference CLEARENCE_REQUEST_CONNECTOR__CLEARENCEREQUEST_ROLEFROM = eINSTANCE.getClearenceRequest_Connector_Clearencerequest_rolefrom();
+
+		/**
+		 * The meta object literal for the '<em><b>Retourclearencerequest rolefrom</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		public static final EReference CLEARENCE_REQUEST_CONNECTOR__RETOURCLEARENCEREQUEST_ROLEFROM = eINSTANCE.getClearenceRequest_Connector_Retourclearencerequest_rolefrom();
+
+		/**
+		 * The meta object literal for the '<em><b>Retourclearencerequest roleto</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		public static final EReference CLEARENCE_REQUEST_CONNECTOR__RETOURCLEARENCEREQUEST_ROLETO = eINSTANCE.getClearenceRequest_Connector_Retourclearencerequest_roleto();
 
 		/**
 		 * The meta object literal for the '{@link hADLM1.LienAttachementXRequest <em>Lien Attachement XRequest</em>}' class.
@@ -10120,6 +10346,26 @@ public class HADLM1Package extends EPackageImpl {
 		 * @generated
 		 */
 		public static final EClass EXTERNAL_PORT_FOURNI_CLIENT_ANSWER_REQUEST = eINSTANCE.getExternalPortFourniClientAnswerRequest();
+
+		/**
+		 * The meta object literal for the '{@link hADLM1.RetourClearenceRequest_RoleFrom <em>Retour Clearence Request Role From</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see hADLM1.RetourClearenceRequest_RoleFrom
+		 * @see hADLM1.HADLM1Package#getRetourClearenceRequest_RoleFrom()
+		 * @generated
+		 */
+		public static final EClass RETOUR_CLEARENCE_REQUEST_ROLE_FROM = eINSTANCE.getRetourClearenceRequest_RoleFrom();
+
+		/**
+		 * The meta object literal for the '{@link hADLM1.RetourClearenceRequest_RoleTo <em>Retour Clearence Request Role To</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see hADLM1.RetourClearenceRequest_RoleTo
+		 * @see hADLM1.HADLM1Package#getRetourClearenceRequest_RoleTo()
+		 * @generated
+		 */
+		public static final EClass RETOUR_CLEARENCE_REQUEST_ROLE_TO = eINSTANCE.getRetourClearenceRequest_RoleTo();
 
 	}
 

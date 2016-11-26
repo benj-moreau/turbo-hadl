@@ -7,7 +7,6 @@ import hADL.Interfaces.PortFourniCompo;
 import hADL.Interfaces.PortRequisCompo;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.logging.Logger;
 
 import org.eclipse.emf.ecore.EClass;

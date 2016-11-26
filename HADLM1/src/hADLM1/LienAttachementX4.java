@@ -39,7 +39,7 @@ public class LienAttachementX4 extends LienAttachementPFRF {
 	 * @generated
 	 * @ordered
 	 */
-	protected ClearenceRequest_RoleFrom clearencerequest_rolefrom;
+	protected RetourClearenceRequest_RoleFrom clearencerequest_rolefrom;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,10 +97,10 @@ public class LienAttachementX4 extends LienAttachementPFRF {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Clearencerequest rolefrom</em>' containment reference.
-	 * @see #setClearencerequest_rolefrom(ClearenceRequest_RoleFrom)
+	 * @see #setClearencerequest_rolefrom(RetourClearenceRequest_RoleFrom)
 	 * @generated
 	 */
-	public ClearenceRequest_RoleFrom getClearencerequest_rolefrom() {
+	public RetourClearenceRequest_RoleFrom getClearencerequest_rolefrom() {
 		return clearencerequest_rolefrom;
 	}
 
@@ -112,7 +112,7 @@ public class LienAttachementX4 extends LienAttachementPFRF {
 	 * @see #getClearencerequest_rolefrom()
 	 * @generated
 	 */
-	public void setClearencerequest_rolefrom(ClearenceRequest_RoleFrom newClearencerequest_rolefrom) {
+	public void setClearencerequest_rolefrom(RetourClearenceRequest_RoleFrom newClearencerequest_rolefrom) {
 		clearencerequest_rolefrom = newClearencerequest_rolefrom;
 	}
 
@@ -144,7 +144,7 @@ public class LienAttachementX4 extends LienAttachementPFRF {
 				setSecurityauth_portfourni((SecurityAuth_PortFourni)newValue);
 				return;
 			case HADLM1Package.LIEN_ATTACHEMENT_X4__CLEARENCEREQUEST_ROLEFROM:
-				setClearencerequest_rolefrom((ClearenceRequest_RoleFrom)newValue);
+				setClearencerequest_rolefrom((RetourClearenceRequest_RoleFrom)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -162,7 +162,7 @@ public class LienAttachementX4 extends LienAttachementPFRF {
 				setSecurityauth_portfourni((SecurityAuth_PortFourni)null);
 				return;
 			case HADLM1Package.LIEN_ATTACHEMENT_X4__CLEARENCEREQUEST_ROLEFROM:
-				setClearencerequest_rolefrom((ClearenceRequest_RoleFrom)null);
+				setClearencerequest_rolefrom((RetourClearenceRequest_RoleFrom)null);
 				return;
 		}
 		super.eUnset(featureID);

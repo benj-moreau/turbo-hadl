@@ -29,7 +29,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="securitycheck_portrequis"
         lowerBound="1" eType="#//SecurityCheck_PortRequis" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="clearencerequest_roleto"
-        lowerBound="1" eType="#//ClearenceRequest_RoleTo" containment="true"/>
+        lowerBound="1" eType="#//RetourClearenceRequest_RoleTo" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LienAttachementX6" eSuperTypes="hADL.ecore#//Liens/LienAttachementPFRF">
     <eStructuralFeatures xsi:type="ecore:EReference" name="securitycheck_portfourni"
@@ -55,7 +55,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Receive_request_PortRequisCompo" eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
   <eClassifiers xsi:type="ecore:EClass" name="SendRequest_PortRequisConfig" eSuperTypes="hADL.ecore#//Interfaces/PortRequisConfig"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ClearenceRequest_RoleTo" eSuperTypes="#//called_RoleTo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClearenceRequest_RoleTo" eSuperTypes="hADL.ecore#//Roles/RoleTo"/>
   <eClassifiers xsi:type="ecore:EClass" name="SQLRequest_Connector" eSuperTypes="hADL.ecore#//Connecteurs/ConnecteurExplicite">
     <eStructuralFeatures xsi:type="ecore:EReference" name="sqlrequest_roleto" lowerBound="1"
         eType="#//SQLRequest_RoleTo" containment="true"/>
@@ -154,6 +154,10 @@
         lowerBound="1" eType="#//ClearenceRequest_RoleTo" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="clearencerequest_rolefrom"
         lowerBound="1" eType="#//ClearenceRequest_RoleFrom" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="retourclearencerequest_rolefrom"
+        lowerBound="1" eType="#//RetourClearenceRequest_RoleFrom" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="retourclearencerequest_roleto"
+        lowerBound="1" eType="#//RetourClearenceRequest_RoleTo" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LienAttachementXRequest" eSuperTypes="hADL.ecore#//Liens/LienAttachementPFRF">
     <eStructuralFeatures xsi:type="ecore:EReference" name="caller_rolefrom" lowerBound="1"
@@ -304,7 +308,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="securityauth_portfourni"
         lowerBound="1" eType="#//SecurityAuth_PortFourni" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="clearencerequest_rolefrom"
-        lowerBound="1" eType="#//ClearenceRequest_RoleFrom" containment="true"/>
+        lowerBound="1" eType="#//RetourClearenceRequest_RoleFrom" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Database_Composant" eSuperTypes="hADL.ecore#//Composant/Composant">
     <eStructuralFeatures xsi:type="ecore:EReference" name="queryint_portrequis" lowerBound="1"
@@ -334,4 +338,6 @@
       eSuperTypes="hADL.ecore#//Interfaces/PortRequisCompo"/>
   <eClassifiers xsi:type="ecore:EClass" name="ExternalPortFourniClientAnswerRequest"
       eSuperTypes="hADL.ecore#//Interfaces/PortFourniCompo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RetourClearenceRequest_RoleFrom" eSuperTypes="hADL.ecore#//Roles/RoleFrom"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RetourClearenceRequest_RoleTo" eSuperTypes="hADL.ecore#//Roles/RoleTo"/>
 </ecore:EPackage>

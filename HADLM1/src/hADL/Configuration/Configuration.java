@@ -15,8 +15,6 @@ import hADL.Liens.LienBindingFourni;
 import hADL.Liens.LienBindingRequis;
 import hADL.Roles.RoleFrom;
 import hADL.Roles.RoleTo;
-import hADLM1.ServeurDetails_Configuration;
-
 import java.lang.reflect.InvocationTargetException;
 
 import java.util.Collection;

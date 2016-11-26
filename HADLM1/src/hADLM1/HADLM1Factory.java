@@ -215,8 +215,13 @@ public class HADLM1Factory extends EFactoryImpl {
 		//1-creation des Roles
 		ClearenceRequest_RoleTo roleTo = createClearenceRequest_RoleTo();
 		ClearenceRequest_RoleFrom roleFrom = createClearenceRequest_RoleFrom();
+		RetourClearenceRequest_RoleFrom retourClearenceRequest_RoleFrom = createRetourClearenceRequest_RoleFrom();
+		RetourClearenceRequest_RoleTo retourClearenceRequest_RoleTo = createRetourClearenceRequest_RoleTo();
+		
 		roleTo.setObserver(observer);
 		roleFrom.setObserver(observer);
+		retourClearenceRequest_RoleFrom.setObserver(observer);
+		retourClearenceRequest_RoleTo.setObserver(observer);
 		
 		//2- creation du connecteur
 		ClearenceRequest_Connector  clearenceRequest_Connector= createClearenceRequest_Connector();
@@ -224,12 +229,17 @@ public class HADLM1Factory extends EFactoryImpl {
 		//3-affectation des roles au connector
 		clearenceRequest_Connector.setClearencerequest_roleto(roleTo);
 		clearenceRequest_Connector.setClearencerequest_rolefrom(roleFrom);
+		clearenceRequest_Connector.setRetourclearencerequest_rolefrom(retourClearenceRequest_RoleFrom);
+		clearenceRequest_Connector.setRetourclearencerequest_roleto(retourClearenceRequest_RoleTo);
+
 		//4-creation des liste des roles
-		RoleTo[] rolesTo = new RoleTo[1];
+		RoleTo[] rolesTo = new RoleTo[2];
 		rolesTo[0] = roleTo;
+		rolesTo[1] = retourClearenceRequest_RoleTo;
 		
-		RoleFrom[] rolesFrom = new RoleFrom[1];
+		RoleFrom[] rolesFrom = new RoleFrom[2];
 		rolesFrom[0] = roleFrom;
+		rolesFrom[1] = retourClearenceRequest_RoleFrom;
 		
 		//5-affectation des listes
 		clearenceRequest_Connector.setRoleto(rolesTo);
@@ -335,7 +345,7 @@ public class HADLM1Factory extends EFactoryImpl {
 		attachementX3.setPortfourni(securityManager_Composant.getCquery_portfourni());
 		LienAttachementX4 attachementX4 = createLienAttachementX4();
 		attachementX4.setSecurityauth_portfourni(securityManager_Composant.getSecurityauth_portfourni());
-		attachementX4.setClearencerequest_rolefrom(clearenceRequest_Connector.getClearencerequest_rolefrom());
+		attachementX4.setClearencerequest_rolefrom(clearenceRequest_Connector.getRetourclearencerequest_rolefrom());
 		attachementX4.setRolefrom(clearenceRequest_Connector.getClearencerequest_rolefrom());
 		attachementX4.setPortfourni(securityManager_Composant.getSecurityauth_portfourni());
 		LienAttachementX5 attachementX5 = createLienAttachementX5();
@@ -367,7 +377,7 @@ public class HADLM1Factory extends EFactoryImpl {
 		LienAttachementY4 attachementY4 = createLienAttachementY4();
 		attachementY4.setPortrequis(connectionManager_Composant.getSecuritycheck_portrequis());
 		attachementY4.setRoleto(clearenceRequest_Connector.getClearencerequest_roleto());
-		attachementY4.setClearencerequest_roleto(clearenceRequest_Connector.getClearencerequest_roleto());
+		attachementY4.setClearencerequest_roleto(clearenceRequest_Connector.getRetourclearencerequest_roleto());
 		attachementY4.setSecuritycheck_portrequis(connectionManager_Composant.getSecuritycheck_portrequis());
 		LienAttachementY5 attachementY5 = createLienAttachementY5();
 		attachementY5.setPortrequis(securityManager_Composant.getCquery_portrequis());
@@ -394,22 +404,22 @@ public class HADLM1Factory extends EFactoryImpl {
 		configuration.setLienattachementy5(attachementY5);
 		configuration.setLienattachementy6(attachementY6);
 		
-		LienAttachementPFRF[] lienspfrf = new LienAttachementPFRF[6];
-		LienAttachementPRRT[] liensprrt = new LienAttachementPRRT[6];
+		LienAttachementPFRF[] lienspfrf = new LienAttachementPFRF[4];
+		LienAttachementPRRT[] liensprrt = new LienAttachementPRRT[4];
 		
-		lienspfrf[0] = attachementX1;
-		lienspfrf[1] = attachementX2;
-		lienspfrf[2] = attachementX3;
-		lienspfrf[3] = attachementX4;
-		lienspfrf[4] = attachementX5;
-		lienspfrf[5] = attachementX6;
+		//lienspfrf[0] = attachementX1;
+		lienspfrf[0] = attachementX2;
+		lienspfrf[1] = attachementX3;
+		lienspfrf[2] = attachementX4;
+		//lienspfrf[3] = attachementX5;
+		lienspfrf[3] = attachementX6;
 		
 		liensprrt[0] = attachementY1;
-		liensprrt[1] = attachementY2;
-		liensprrt[2] = attachementY3;
-		liensprrt[3] = attachementY4;
-		liensprrt[4] = attachementY5;
-		liensprrt[5] = attachementY6;
+		//liensprrt[1] = attachementY2;
+		liensprrt[1] = attachementY3;
+		liensprrt[2] = attachementY4;
+		//liensprrt[4] = attachementY5;
+		liensprrt[3] = attachementY6;
 		
 		configuration.setLienattachementpfrf(lienspfrf);
 		configuration.setLienattachementprrt(liensprrt);
@@ -827,6 +837,8 @@ public class HADLM1Factory extends EFactoryImpl {
 			case HADLM1Package.EXTERNAL_BINDING_ANSWER_REQUEST: return createExternalBindingAnswerRequest();
 			case HADLM1Package.EXTERNAL_PORT_REQUIS_CLIENT_SEND_REQUEST: return createExternalPortRequisClientSendRequest();
 			case HADLM1Package.EXTERNAL_PORT_FOURNI_CLIENT_ANSWER_REQUEST: return createExternalPortFourniClientAnswerRequest();
+			case HADLM1Package.RETOUR_CLEARENCE_REQUEST_ROLE_FROM: return createRetourClearenceRequest_RoleFrom();
+			case HADLM1Package.RETOUR_CLEARENCE_REQUEST_ROLE_TO: return createRetourClearenceRequest_RoleTo();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1500,6 +1512,26 @@ public class HADLM1Factory extends EFactoryImpl {
 	public ExternalPortFourniClientAnswerRequest createExternalPortFourniClientAnswerRequest() {
 		ExternalPortFourniClientAnswerRequest externalPortFourniClientAnswerRequest = new ExternalPortFourniClientAnswerRequest();
 		return externalPortFourniClientAnswerRequest;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RetourClearenceRequest_RoleFrom createRetourClearenceRequest_RoleFrom() {
+		RetourClearenceRequest_RoleFrom retourClearenceRequest_RoleFrom = new RetourClearenceRequest_RoleFrom();
+		return retourClearenceRequest_RoleFrom;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RetourClearenceRequest_RoleTo createRetourClearenceRequest_RoleTo() {
+		RetourClearenceRequest_RoleTo retourClearenceRequest_RoleTo = new RetourClearenceRequest_RoleTo();
+		return retourClearenceRequest_RoleTo;
 	}
 
 	/**

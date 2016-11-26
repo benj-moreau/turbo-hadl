@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_wF2WQIPvEeaO1YQ9PwPduQ" selectedViews="_wQVvAIPvEeaO1YQ9PwPduQ" version="11.0.0.201604141600">
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_wF2WQIPvEeaO1YQ9PwPduQ" selectedViews="_wQVvAIPvEeaO1YQ9PwPduQ" version="11.0.1.201608181000">
   <semanticResources>hADL.ecore</semanticResources>
   <semanticResources>hADL.genmodel</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_wQVvAIPvEeaO1YQ9PwPduQ">
@@ -366,7 +366,7 @@
                   <styles xmi:type="notation:FilteringStyle" xmi:id="_r74uI5SAEeaILIN2nFGAfQ"/>
                 </children>
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_r74HEZSAEeaILIN2nFGAfQ" fontName="Ubuntu" fontHeight="8" italic="true"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r74HEpSAEeaILIN2nFGAfQ" x="85" y="9" width="218" height="54"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r74HEpSAEeaILIN2nFGAfQ" x="110" y="-1" width="218" height="54"/>
               </children>
               <styles xmi:type="notation:SortingStyle" xmi:id="_6B_ipZR_EeaILIN2nFGAfQ"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_6B_ippR_EeaILIN2nFGAfQ"/>
@@ -1096,17 +1096,17 @@
           </edges>
           <edges xmi:type="notation:Edge" xmi:id="_r75VPJSAEeaILIN2nFGAfQ" type="4001" element="_k3GZkJR8EeagotqEzxqenw" source="_7NcCEJR_EeaILIN2nFGAfQ" target="_r74HEJSAEeaILIN2nFGAfQ">
             <children xmi:type="notation:Node" xmi:id="_r75VQJSAEeaILIN2nFGAfQ" type="6001">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r75VQZSAEeaILIN2nFGAfQ" y="-10"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r75VQZSAEeaILIN2nFGAfQ" x="5" y="-10"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_r75VQpSAEeaILIN2nFGAfQ" type="6002">
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r75VQ5SAEeaILIN2nFGAfQ" y="-10"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_r75VRJSAEeaILIN2nFGAfQ" type="6003">
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r75VRZSAEeaILIN2nFGAfQ" y="-10"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r75VRZSAEeaILIN2nFGAfQ" x="-7" y="-2"/>
             </children>
             <styles xmi:type="notation:ConnectorStyle" xmi:id="_r75VPZSAEeaILIN2nFGAfQ" routing="Tree"/>
             <styles xmi:type="notation:FontStyle" xmi:id="_r75VPpSAEeaILIN2nFGAfQ" fontName="Ubuntu" fontHeight="8"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r75VP5SAEeaILIN2nFGAfQ" points="[-1, -5, 9, 62]$[-1, -105, 9, -38]$[61, -105, 71, -38]$[38, -93, 48, -26]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r75VP5SAEeaILIN2nFGAfQ" points="[0, -5, -15, 72]$[0, -38, -15, 39]$[63, -38, 48, 39]$[63, -51, 48, 26]"/>
             <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r758QJSAEeaILIN2nFGAfQ" id="(1.0,0.1282051282051282)"/>
             <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r758QZSAEeaILIN2nFGAfQ" id="(0.5,0.5)"/>
           </edges>

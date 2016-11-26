@@ -303,7 +303,7 @@ public class Database_Composant extends Composant {
 			data = getResultRequest(data);
 			queryint_portfourni.notifyConfig(data);
 		}else if (portrequis.equals(queryint_portrequis)){
-			LOGGER.info("Reception d'une reponse par le connection manager"+data.toString());
+			LOGGER.info("Reception d'une requete par le connection manager "+data.toString());
 		}else{
 			LOGGER.warning("mauvais port");
 		}

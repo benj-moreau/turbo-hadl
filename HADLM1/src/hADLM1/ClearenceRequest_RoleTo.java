@@ -2,6 +2,7 @@
  */
 package hADLM1;
 
+import hADL.Roles.RoleTo;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -12,7 +13,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ClearenceRequest_RoleTo extends called_RoleTo {
+public class ClearenceRequest_RoleTo extends RoleTo {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
