@@ -238,8 +238,8 @@ public class HADLM1Factory extends EFactoryImpl {
 		rolesTo[1] = retourClearenceRequest_RoleTo;
 		
 		RoleFrom[] rolesFrom = new RoleFrom[2];
-		rolesFrom[0] = roleFrom;
-		rolesFrom[1] = retourClearenceRequest_RoleFrom;
+		rolesFrom[1] = roleFrom;
+		rolesFrom[0] = retourClearenceRequest_RoleFrom;
 		
 		//5-affectation des listes
 		clearenceRequest_Connector.setRoleto(rolesTo);
@@ -346,7 +346,7 @@ public class HADLM1Factory extends EFactoryImpl {
 		LienAttachementX4 attachementX4 = createLienAttachementX4();
 		attachementX4.setSecurityauth_portfourni(securityManager_Composant.getSecurityauth_portfourni());
 		attachementX4.setClearencerequest_rolefrom(clearenceRequest_Connector.getRetourclearencerequest_rolefrom());
-		attachementX4.setRolefrom(clearenceRequest_Connector.getClearencerequest_rolefrom());
+		attachementX4.setRolefrom(clearenceRequest_Connector.getRetourclearencerequest_rolefrom());
 		attachementX4.setPortfourni(securityManager_Composant.getSecurityauth_portfourni());
 		LienAttachementX5 attachementX5 = createLienAttachementX5();
 		attachementX5.setDbquery_portfourni(connectionManager_Composant.getDbquery_portfourni());
@@ -376,7 +376,7 @@ public class HADLM1Factory extends EFactoryImpl {
 		attachementY3.setSecurityauth_portrequis(securityManager_Composant.getSecurityauth_portrequis());
 		LienAttachementY4 attachementY4 = createLienAttachementY4();
 		attachementY4.setPortrequis(connectionManager_Composant.getSecuritycheck_portrequis());
-		attachementY4.setRoleto(clearenceRequest_Connector.getClearencerequest_roleto());
+		attachementY4.setRoleto(clearenceRequest_Connector.getRetourclearencerequest_roleto());
 		attachementY4.setClearencerequest_roleto(clearenceRequest_Connector.getRetourclearencerequest_roleto());
 		attachementY4.setSecuritycheck_portrequis(connectionManager_Composant.getSecuritycheck_portrequis());
 		LienAttachementY5 attachementY5 = createLienAttachementY5();

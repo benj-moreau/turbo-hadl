@@ -7,6 +7,7 @@ import hADL.Interfaces.PortFourniCompo;
 import hADL.Interfaces.PortRequisCompo;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.eclipse.emf.ecore.EClass;
@@ -407,7 +408,7 @@ public class ConnectionManager_Composant extends Composant {
 			externalsocket_portfourni.notifyConfig(data);
 		}else if(portrequis.equals(securitycheck_portrequis)){
 			LOGGER.info("Reception de reponse par la le composant de securité: "+data.toString());
-			
+			externalsocket_portfourni.notifyConfig(data);
 		}else{
 			LOGGER.warning("mauvais port");
 		}
@@ -432,7 +433,7 @@ public class ConnectionManager_Composant extends Composant {
 		ArrayList LogedQuery = new ArrayList();
 		LogedQuery.add(0, data);
 		Scanner sc = new Scanner(System.in);
-		LOGGER.info("Entrez le mot de passe");
+		LOGGER.log(Level.SEVERE,"Entrez le mot de passe");
 		String str = sc.nextLine();
 		LogedQuery.add(1,str);
 		return LogedQuery;

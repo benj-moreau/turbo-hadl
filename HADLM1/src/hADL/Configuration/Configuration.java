@@ -858,7 +858,6 @@ public class Configuration extends Element implements Observer {
 			for(Connecteur connecteur : childConnecteur){
 				for(RoleFrom roleFrom: connecteur.getRolefrom()){
 					if(roleDestinataire.equals(roleFrom)){
-						System.out.println("trouve "+ roleFrom);
 						connecteur.notify(roleFrom, data);
 						return;
 					}
@@ -874,15 +873,13 @@ public class Configuration extends Element implements Observer {
 			}
 			for(PortFourniConfig portFourniCourant: this.portfourniconfig){
 				if(portFourniCourant.equals(portDestinataire)){
-					LOGGER.info("Passage part Configuration");
-					portDestinataire.notifyConfig(data);
-					//actionViaPort(portDestinataire, data);
+					notify(portDestinataire, data);
 					return;
 				}
 				
 			}
 			if(portDestinataire==null){
-				System.out.println("erreur: non trouvé, peut etre que c'est un binding composant->config");
+				LOGGER.warning("erreur: non trouvé, peut etre que c'est un binding composant->config");
 			}
 		}
 	}

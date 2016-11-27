@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import hADL.Composant.Composant;
 import hADL.Configuration.ConfigurationFactory;
 import hADLM1.Client_Composant;
@@ -11,7 +13,11 @@ public class M0Test {
 	public static void main(String[] args) {
 		//création factory
 		HADLM1Factory f = HADLM1Factory.init();
-		Systeme_Configuration cs = f.createSystemeConfigurationPerso(f.createSystemeConfigurationPerso(null));
-		cs.sendRequest("key1");
+		Systeme_Configuration cs = f.createSystemeConfigurationPerso((null));
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Entrez le votre requete");
+		String str = sc.nextLine();
+		cs.sendRequest(str);
+		sc.close();
 	}
 }

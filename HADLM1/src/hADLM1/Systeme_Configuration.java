@@ -631,9 +631,15 @@ public class Systeme_Configuration extends Configuration {
 		return super.eIsSet(featureID);
 	}
 	
+	/**
+	 * @generated NOT
+	 */
 	protected void notify(PortFourniConfig port, Object data) {
-		//int id = port.
-		System.out.println(this.eContainerFeatureID());
+		if(port.equals(answerrequest_portfourniconfig)){
+			System.out.println("Reception de la Réponse par le systeme CS :");
+			System.out.println(data);
+		}
+		
 	}
 	
 	/**
@@ -643,5 +649,7 @@ public class Systeme_Configuration extends Configuration {
 		LOGGER.info("Debut: Send Request");
 		actionViaPort(sendrequest_portrequisconfig, data);
 	}
+	
+	
 	
 } // Systeme_Configuration

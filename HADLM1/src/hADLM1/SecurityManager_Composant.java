@@ -300,7 +300,7 @@ public class SecurityManager_Composant extends Composant {
 	@Override
 	public void notify(PortRequisCompo portrequis, Object data) {
 		if(portrequis.equals(securityauth_portrequis)){
-			LOGGER.info("Reception d'une requete le connect manager "+data.toString());
+			LOGGER.info("Reception d'une requete via le connect manager "+data.toString());
 			if(authentification(data)){
 				cquery_portfourni.notifyConfig(((ArrayList)data).get(0));
 			}else{
@@ -332,7 +332,7 @@ public class SecurityManager_Composant extends Composant {
 		// mot de passe bouchon
 		String mdp = "admin";
 		ArrayList<Object> newData = (ArrayList<Object>) data;
-		LOGGER.info("test mot de passe");
+		LOGGER.info("test mot de passe: "+ newData.get(1).equals(mdp));
 		return newData.get(1).equals(mdp);
 	}
 

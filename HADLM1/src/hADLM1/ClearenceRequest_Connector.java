@@ -287,6 +287,9 @@ public class ClearenceRequest_Connector extends ConnecteurExplicite {
 		if(clearencerequest_rolefrom.equals(roleFrom)){
 			LOGGER.info("ConnectionManager -> SecurityManager");
 			clearencerequest_roleto.notifyConfig(data);
+		}else if(retourclearencerequest_rolefrom.equals(roleFrom)){
+			LOGGER.info("SecurityManager -> ConnectionManager ");
+			retourclearencerequest_roleto.notifyConfig(data);
 		}else{
 			LOGGER.warning("mauvais role");
 		}

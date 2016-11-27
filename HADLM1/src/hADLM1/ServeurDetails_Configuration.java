@@ -1179,7 +1179,10 @@ public class ServeurDetails_Configuration extends Configuration {
 	 */
 	protected void notify(PortFourniConfig portDestinataire, Object data) {
 		if (portDestinataire.equals(answerrequest_portfourni)) {
-			
+			LOGGER.info("Passage par Serveur Details Configuration");
+			portDestinataire.notifyConfig(data);
+		}else{
+			LOGGER.warning("mauvais port");
 		}
 		
 	}
