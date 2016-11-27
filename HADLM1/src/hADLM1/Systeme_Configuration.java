@@ -636,8 +636,7 @@ public class Systeme_Configuration extends Configuration {
 	 */
 	protected void notify(PortFourniConfig port, Object data) {
 		if(port.equals(answerrequest_portfourniconfig)){
-			System.out.println("Reception de la Réponse par le systeme CS :");
-			System.out.println(data);
+			LOGGER.severe("Reception de la Réponse par le systeme CS :\n"+data.toString());
 		}
 		
 	}

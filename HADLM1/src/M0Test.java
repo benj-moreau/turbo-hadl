@@ -15,7 +15,7 @@ public class M0Test {
 		HADLM1Factory f = HADLM1Factory.init();
 		Systeme_Configuration cs = f.createSystemeConfigurationPerso((null));
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Entrez le votre requete");
+		System.out.println("Entrez votre requete");
 		String str = sc.nextLine();
 		cs.sendRequest(str);
 		sc.close();

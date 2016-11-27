@@ -337,6 +337,7 @@ public class Database_Composant extends Composant {
 	    	LOGGER.info("correspondance trouvée : " + res);
 	    } else {
 	    	LOGGER.info("La requête n'a pas de reponse");
+	    	return "empty";
 	    }
 	    return res;
 	}
